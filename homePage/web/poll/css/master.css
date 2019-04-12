@@ -1,0 +1,65 @@
+form {
+  text-align: center;   
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+legend {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.container-input {
+  display: inline-block;
+}
+.container-input label{
+   margin: 0 20px;
+  padding: 0;
+  text-align: center;
+}
+.container-input input {
+  background-color: #f2f2f2;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.submit{
+  width: 100%;
+  border-radius: 5px;
+  height: 15%;
+}
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.modal-body h2, h3 {
+  text-align: center;
+}
+.container-input h3 {
+  text-align: center;
+}
+.modal-body-ad img{
+  width: 100%; 
+}
+.ad-container {
+  width: 100%;  
+}
+.cont-option {
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+}
+.coments {
+  width: 60%;
+  height: 40px;
+}
+.send {
+  height: 40px;
+}

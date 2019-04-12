@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <title>H3S WIFI</title>
+      <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+      <script type="text/javascript" src="../../common/js/jquery-2.1.3.min.js"></script>
+      <script type="text/javascript" src="../../common/js/jquery.hongdian.js"></script>
+      <script type="text/javascript" src="../../common/js/base/base.js"></script>
+   </head>
+   <body>
+      <!-- Este es solo un div para poder mostrar las imagenes publicitarias del inicio -->
+      <div class="container">
+         <div id="adShow" class="ad_show"></div>
+      </div>
+      <!-- Aqui incia el javascript que muestra las imagenes publicitarias -->
+      <script type="text/javascript">
+          $(function(){
+              var adInterval = '';
+              var imgSize = '';
+              // Atravez de ajax se traen los archivos que contienen la ruta
+              // y el tamaño de las imagenes publicitarias a mostrar.
+              var request = $.ajax({
+                  url: '../../advertisement/data/010001' ,
+                  type: "GET",
+                  dataType: 'json' //类型  //Tipo o extencion del documento a traer.
+              });
+              //Funcion que ejecuta el codigo ajax.
+              request.success(function(data) {
+                //加载成功则需要加载广告
+                //La carga exitosa requiere el tipo de anuncio lo pasa como el parametro data.
+                  console.log(data);
+                  //adInterval = advertisement interval
+                  //Intervalo de tiempo del anuncio
+                  adInterval = data.interval;
+                  //Tamaño de la imagen
+                  imgSize = data.img.length;
+                  //Barra de progreso. Avanza segun el intervalo de los anuncios.
+                  //Esto es llamado por jquery.
+                  var Slide = '<div class="progress_bar"> ' +
+                          '<div id="progressRate" class="progress_rate"></div> ' +
+                          '</div>';
+                  $.each(data.img, function(index,value){
+                      //Si existe la direccion del recurso indexa la imagen
+                      if(value.imgsrc){
+                          if(index == 0){
+                              //Aqui se traen los valores atravez de el id
+                              //para poder enviar la informacion a la base de datos
+                              Slide += '<img id="'+ value.id + '" title="'+ value.title + '" src="'+ value.imgsrc + '" style="display:block"/>';
+                          }
+                          else{
+                              Slide += '<img id="'+ value.id + '" title="'+ value.title + '" src="'+ value.imgsrc + '" style="display:none"/>';
+                          }
+                      }
+
+                  });
+                  $( "#adShow").append(Slide);
+
+                  setTimeout(function(){
+                      var imgObj = "";
+                      var totalTime = adInterval*imgSize;
+                      var i = 0;
+                      var j = 0;
+                      var interval =  setInterval(function(){
+                          if( i%adInterval ===0 && i!= totalTime){
+                              imgObj = $($("#adShow").find("img").get(j));
+                              imgObj.show();
+                              if(j != 0){
+                                  $($("#adShow").find("img").get(j-1)).hide();
+                              }
+                              j++;
+
+                          }else if(i === totalTime){
+                              clearInterval(interval);
+                              window.location.href="homePage.html";
+                          }
+                          var progressRate = ((i/totalTime)*100).toFixed(0) + "%";
+                          if(i!=0){
+                              $("#progressRate").width(progressRate);
+                              $("#showRate").text(progressRate);
+                          }
+                          i++;
+
+                      },1000);
+                      var adWidth = $(".container").width();
+                      if(adWidth ===0){
+                          adWidth = window.innerWidth;
+                      }
+                      console.log(adWidth);
+                      var adHeight = (960/640)*adWidth;
+                      $("#adShow").find("img").attr("width",adWidth);
+                      $("#adShow").find("img").attr("height",adHeight);
+
+                      $(window).bind('resize', function(e) {
+
+                          var adWidth = $("#adShow").width();
+                          if(adWidth ===0){
+                              adWidth = window.innerWidth;
+                          }
+                          console.log(adWidth);
+                          var adHeight = 0;
+                          if(adWidth < 640){
+                              adHeight = adWidth * (960/640);
+                          }else{
+                              adHeight = 960;
+                          }
+
+                          $(".ad_show").height(adHeight);
+                          $(".ad_show img").height(adHeight);
+                      });
+
+                      $(window).resize();
+                  },200)
+
+
+              });
+
+              request.error(function(){
+                  console.dir("Unable to obtain resources");
+              });
+
+          });
+
+          //广告点击事件
+          //Escucha cada vez que da un click en la imagen
+          function adDetailEvent() {
+              //广告详情绑定事件
+              //Detalles de anuncio evento vinculante
+              $("#adShow > img").each(function(){
+                  $(this).click(function() {
+                      var id = $(this).attr("id");
+                      var href = $(this).attr("href");//跳转地址
+                      var itemId = $(".container").attr("mid");
+                      var resName = $(this).attr("title");
+                      var resType = "010101";
+                  });
+              });
+          };
+
+      </script>
+   </body>
+</html>

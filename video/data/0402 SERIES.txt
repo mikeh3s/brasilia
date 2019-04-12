@@ -1,0 +1,67 @@
+El archivo "0402" contiene la lista de las series que se ven en la pagina
+de media.
+Para poder modificar la imagen se debe ingresar al siguiente directorio.
+sr: ../video/image/posterSerie/
+Aquí vamos a introducir las imágenes de las diferentes series que queremos colocar.
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+
+EJ: africa1.jpg
+
+Para cambiar o introducir una nueva película se tiene que colocar el archivo
+.mp4 en la siguiente dirección.
+Src: video/video/series/
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+
+EJ: pirry1.mp4
+
+Para cambiar o introducir un nuevo video pre-roll se debe guardar el archivo .mp4 en la siguiente dirección.
+Src: video/video/preRoll/
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+EJ: nissan.mp4
+
+
+-->CÓDIGO A MODIFICAR<--
+
+{
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "id":"0402_1514399400008", <-- Se cambia el ultimo numero por el de la siguiente sucesión para identificar el id.
+  "img":"../image/posterSerie/Africa4.jpg",   <-- Se cambia el nombre del archivo “.jpg”. Para agregar se sigue la sucesión de numeros. EJ: africa5.jpg.
+  "isDelete":0,
+  "menu":{"$ref":"$[0].menu"},
+  "plot":"<p>BBC,Africa4</p>" ,<-- Texto de introducción sobre la serie.
+  "poster":"Teleplay",
+  "sort":2,
+  "src":"../video/series/007.mp4", <-- Es la ruta del video. Solo se debe cambiar el nombre del archivo “.mp4” para cambiar por un nuevo video.
+  "pub":"../video/preRoll/Nissan.mp4",  <-- Es la ruta del pre-roll. Solo se debe cambiar el nombre del archivo “.mp4” para cambiar por un nuevo video.
+  "title":"BBC,Africa4",
+  "updateTime":1524549037000
+}
+
+
+
+-->CÓDIGO A COPIAR<--
+
+{
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "id":"0402_151439940009",
+  "img":"../image/posterSerie/Africa5.jpg",
+  "isDelete":0,
+  "menu":{"$ref":"$[0].menu"},
+  "plot":"<p>BBC,Africa5</p>",
+  "poster":"Teleplay",
+  "sort":1,
+  "src":"../video/series/pirry1.mp4",
+  "pub":"../video/preRoll/Chips.mp4",
+  "title":"BBC,Africa5",
+  "updateTime":1524549037000
+}
+
+
+*En el ultimo corchete "}" antes de este codigo para copiar debe de haber un corchete con una coma == "},".

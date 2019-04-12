@@ -1,0 +1,55 @@
+header{
+  padding: 20px 0;
+  margin-bottom: center;
+  width: 100%;
+  text-align: center;
+}
+header a{
+  text-decoration: none;
+  color: #333;
+}
+h1 {
+  margin: 10px;
+  color: #00afef;
+  font-size: 30px;
+  text-align: center;
+}
+.logo {
+  width: 20%;
+  max-width: 200px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+fieldset {
+  position: relative;
+  width: 100%;
+
+}
+.creation-container {
+  position:relative;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+.container-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.set-all {
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  margin: 15px;
+}
+.set-all:focus{
+  border-color: #79f7a4;
+}
+.set-all input[type="text"].error {
+  color: rgb(247, 28, 28);
+}
+.terms {
+  padding: 0;
+  margin: 0;
+}

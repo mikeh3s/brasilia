@@ -1,0 +1,7 @@
+
+    {
+     "weixin_server":"http://61.142.176.23:51110/auth/weixinWifi.hd",
+	 "server_host":"http://47.88.138.97:8080",
+	 "auth_host":"http://47.88.138.97:8080"
+    }
+

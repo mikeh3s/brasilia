@@ -1,0 +1,38 @@
+[
+    {
+    "id":"0401_1514399400000",
+    "title":"Tomb Raider (2018)",
+    "img":"../image/posterMovie/img-mov1.jpg",
+    "src":"../video/movies/mov1.mp4",
+	    "pub":"../video/preRoll/preroll1.mp4",
+    "poster":"Movie",
+    "plot":"<p>La joven Lara Croft, cansada de malvivir trabajando como mensajera en bicicleta, lo abandona todo y parte en busca de su padre, un aventurero que desapareció en una isla legendaria que se encuentra en algún lugar de la costa de Japón.</p>"
+    },
+    {
+    "id":"0401_1514399400001",
+    "title":"Creed II: Defendiendo el legado (2019)",
+    "img":"../image/posterMovie/img-mov2.jpg",
+    "src":"../video/movies/mov2.mp4",
+	    "pub":"../video/preRoll/preroll1.mp4",
+    "poster":"Movie",
+    "plot":"<p>Supervisado por el legendario Rocky Balboa, el espectacular púgil Adonis Johnson se prepara para un combate contra el hijo de Iván Drago, el boxeador soviético que mató a Apollo Creed en el ring.</p>"
+    },
+    {
+    "id":"0401_1514399400002",
+    "title":"Megalodón (2018)",
+    "img":"../image/posterMovie/img-mov3.jpg",
+    "src":"../video/movies/mov3.mp4",
+	    "pub":"../video/preRoll/preroll1.mp4",
+    "poster":"Movie",
+    "plot":"<p>Un tiburón prehistórico de 25 metros de longitud amenaza a los tripulantes de un submarino hundido en la fosa más profunda del océano Pacífico y al grupo enviado para rescatarlos. Si no lo detienen, el tiburón causará estragos.</p>"
+    },
+    {
+    "id":"0401_1514399400003",
+    "title":"Avengers: Infinity War (2018)",
+    "img":"../image/posterMovie/img-mov4.jpg",
+    "src":"../video/movies/mov4.mp4",
+        "pub":"../video/preRoll/preroll1.mp4",
+    "poster":"Movie",
+    "plot":"<p>Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.</p>"
+    }
+]

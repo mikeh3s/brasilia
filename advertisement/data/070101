@@ -1,0 +1,25 @@
+      {
+        "interval":"2",
+        "img":[{"adPosition":{
+        "id":"070101",
+        "menuId":"908590469248495638",
+        "pid":"908256221270433800",
+        "resPath":"advertisement/",
+        "sec":[],
+        "sort":15,
+        "title":"Internet Top",
+        "tplId":0,
+        "updateTime":1505461147000},
+        "edited":0,
+        "groupId":"13",
+        "handler":{},
+        "href":"",
+        "id":"070101_15033016_001",
+        "imgsrc":"../../advertisement/image/internetHorizonAd/ihad1.jpg",
+        "isDelete":0,
+        "sort":1,
+        "title":"Internet_TopAd_1",
+        "updateTime":1524549037000
+      }
+    ]
+  }

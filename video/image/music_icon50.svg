@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="250px" height="100px" viewBox="0 0 250 100" enable-background="new 0 0 250 100" xml:space="preserve">
+<g opacity="0.48">
+	<path d="M49.5,25c0,13.475-11.025,24.5-24.5,24.5S0.5,38.475,0.5,25S11.525,0.5,25,0.5S49.5,11.525,49.5,25z"/>
+</g>
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M49,25c0,13.2-10.8,24-24,24S1,38.2,1,25
+		S11.8,1,25,1S49,11.8,49,25z"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M20.841,31c0,1.1,0.749,1.501,1.664,0.891l8.672-5.781c0.915-0.61,0.915-1.608,0-2.219l-8.672-5.781
+		c-0.915-0.611-1.664-0.21-1.664,0.89V31z"/>
+</g>
+<g opacity="0.48">
+	<path d="M49.5,75c0,13.475-11.025,24.5-24.5,24.5S0.5,88.475,0.5,75S11.525,50.5,25,50.5S49.5,61.525,49.5,75z"/>
+</g>
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M49,75c0,13.2-10.8,24-24,24S1,88.2,1,75
+		s10.8-24,24-24S49,61.8,49,75z"/>
+</g>
+<rect x="19" y="69" fill="#FFFFFF" width="4" height="12"/>
+<rect x="27" y="69" fill="#FFFFFF" width="4" height="12"/>
+<g>
+	<g opacity="0.48">
+		<path d="M134.995,50c0,19.25-15.75,35-35,35C80.748,85,65,69.25,65,50s15.748-35,34.995-35C119.245,15,134.995,30.75,134.995,50z"
+			/>
+	</g>
+	<g>
+		<path fill="#019B78" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M134.556,50c0,19.008-15.552,34.561-34.561,34.561
+			C80.989,84.561,65.44,69.008,65.44,50s15.549-34.561,34.555-34.561C119.004,15.439,134.556,30.992,134.556,50z"/>
+	</g>
+	<rect x="90.996" y="41" fill="#FFFFFF" width="5.999" height="18"/>
+	<rect x="102.995" y="41" fill="#FFFFFF" width="6" height="18"/>
+</g>
+<g>
+	<g opacity="0.48">
+		<path d="M235,50c0,19.25-15.75,35-35,35s-35-15.75-35-35s15.75-35,35-35S235,30.75,235,50z"/>
+	</g>
+	<g>
+		<path fill="#019B78" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M234.561,50c0,19.01-15.552,34.561-34.561,34.561
+			S165.439,69.01,165.439,50c0-19.008,15.552-34.56,34.561-34.56S234.561,30.993,234.561,50z"/>
+	</g>
+	<g>
+		<path fill="#FFFFFF" d="M195.141,60.145c0,0.807,0.586,1.086,1.303,0.656l16.16-9.996c0.717-0.439,0.717-1.166,0-1.605
+			l-16.16-9.99c-0.717-0.445-1.303-0.15-1.303,0.645V60.145z"/>
+	</g>
+</g>
+</svg>

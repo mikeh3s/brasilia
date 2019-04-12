@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 12px Arial,"宋体","Microsoft Yahei";
+}
+/*下面的代码指定，字体大小是页面默认大小的100%，即16像素。*/
+body{
+    font: normal 100%  Arial,"宋体","Microsoft Yahei",Verdana, Lucida Grande, Lucida Sans,sans-serif;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#181818;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+img, object, audio {
+	max-height: 100%;
+	max-width: 100%;
+}
+/*据不同的屏幕分辨率，选择应用不同的CSS规则*/
+@media only all and (max-width: 640px){
+    .container{
+        width: 100%!important;
+    }
+	.bottom_ad{
+		width: 100%!important;
+	}
+ }
+
+.container{
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+}
+.news_title{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size:20px;
+    color:black;
+}
+.source_time{
+	padding-left: 20px;
+	padding-bottom: 10px;
+	color:#b9b9b9;
+	font-size:13px;
+	font-weight: bold;
+}
+.bottompart{
+    font:18px 'Microsoft Yahei';
+    color:#2c2c2c;
+}
+.showad{
+    height:90px;
+    background-size:100% 90px;
+}
+.bottomcontainer{
+    padding-bottom: 0px;
+	border-top: 1px solid #9c9c9c;
+}
+p{
+     padding:5px 20px;
+     font: 15px "Microsoft Yahei";
+     line-height: 1.45em;
+ }
+
+
+.travel_title{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    /* padding-left: 10px; */
+    padding-bottom: 10px;
+    margin-top: 5px;
+    color: #1B5E20; /*  color de titulo de la subpagina*/
+}
+
+
+.travel_detail{
+    text-align: center;
+    border-top: 3px solid #ccc;
+    padding: 5px 0;
+    margin: 0;
+    color: #1B5E20; /*color de subtitulo*/
+    font-size: 20px;
+}
+
+.header{
+    width: 100%;
+}
+
+.header-center {
+    width: 80%;
+}

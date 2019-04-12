@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*下面的代码指定，字体大小是页面默认大小的100%，即16像素。*/
+img, object, audio {
+	max-height: 100%;
+	max-width: 100%;
+}
+/*据不同的屏幕分辨率，选择应用不同的CSS规则*/
+@media only all and (max-width: 640px){
+    .container{
+        width: 100%!important;
+    }
+	.bottom_ad{
+		width: 100%!important;
+	}
+ }
+
+body{
+    background-color: #EEF1F6;
+}
+
+.container{
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+    overflow-x:hidden;
+}
+
+.video_bottom{
+     height:48px;
+     background-color:#F5F5F5;
+     border-bottom: 1px solid #BEBBBB;
+ }
+ .video_show{
+     width:100%;
+	 padding-top: 10px;
+	 margin-top: 50px;
+ }
+ .title_word{
+     font: 14px Arial;
+     line-height:48px;
+     margin-left:15px;
+     font-size: 16px;
+     font-weight: bold;
+     /*color: #354fff;*/
+ }
+ .plot{
+	 padding-top: 10px;
+     background-color:#EEF1F6;
+ }
+  .plot p{
+     text-indent: 2em;
+     padding:0 20px 5px;
+     font: 14px "Microsoft Yahei";
+     line-height:25px;
+ }
+
+  .video{
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-weight: bold;
+      /*padding-left: 10px;*/
+      padding-bottom: 20px;
+			margin: 5px;
+			position: relative;
+  }
+
+.logo_cntr {
+    /*border-top: 1px solid #d3d3d3;*/
+    background-color: #000;
+    height: 8px;
+}
+
+.VideoHeader{
+    margin-left: 10px;
+}
+
+.secondArrow{
+    font-size: 16px;
+    font-family: simsun,"\5B8B\4F53","宋体";
+}
+
+.pageType, .video_type{
+    font-size: 14px;
+    color:#06a7e1;
+    font-family: "Microsoft YaHei", "微软雅黑", helvetica, arial, verdana, tahoma, sans-serif;
+}
+
+.header{
+    width: 100%;
+    background-color: #fff;
+}
+
+.header-center {
+    width: 80%;
+}
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+}

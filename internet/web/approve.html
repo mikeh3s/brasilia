@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Titulo de la pagina web -->
+        <title>Portales de navegación</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../common/css/showLoading/showLoading.css"/>
+        <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../common/css/idangerous.swiper.css">
+        <link rel="stylesheet" type="text/css" href="../../common/css/public.css">
+        <link rel="stylesheet" type="text/css" href="../css/internet.css">
+        <link rel="stylesheet" type="text/css" href="../css/pages.css">
+        <!-- link toggle -->
+        <link rel="stylesheet" href="../css/toggle.css">
+        <!-- set your website favicon -->
+        <link rel="icon" type="image/jpg" href="../../common/image/logo/logo.png">
+        
+        <script type="text/javascript" src="../../common/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
+        <script type="text/javascript" src="../../common/js/jquery.showLoading.min.js"></script>
+        <script type="text/javascript" src="../../common/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../../common/js/jquery.hongdian.js"></script>
+        <script type="text/javascript" src="../../common/js/idangerous.swiper.js"></script>
+        <script type="text/javascript" src="../../common/js/base/base.js"></script>
+        <script type="text/javascript" src="../../common/js/menu/menu.js"></script>
+        <script src="../../common/js/NewPopup.js"></script>
+        <!-- Comentamos el approve.js para saber si se repite o no -->
+        <script type="text/javascript" src="../js/approve.js"></script>
+        <script type="text/javascript" src="../js/portals.js"></script>
+        <script src="../../common/js/base/get_ad.js"></script>
+        <script type="text/javascript" src="../js/redirect.js"></script>
+        <!-- script toggle -->
+        <script src="../js/toggle.js"></script>
+        <!--<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101214096"
+        data-redirecturi="http://17gimefi.com/index_qq_b.html" charset="utf-8"></script>-->
+        <style media="screen">
+        .content-links {
+            display: inline-block;
+            width: 50%;
+            height: 200px;
+            position: relative;
+            padding: 5px;
+        }
+        .img-page {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div id="" class="login_container" style="text-align: center;">
+            <div class="container">
+                <div class="header">
+                    <div class="menu-btn"></div>
+                    <div class="center-block header-center">
+                        <img class="img-responsive" src="../../common/image/top_logo.png">
+                    </div>
+                </div>
+
+
+                <!-----------------一级菜单-------------------->
+                <div  id="video_ad_div"  class="main_menu">
+                    <ul class="nav menu-ul">
+                        <script type="text/javascript">
+                            /*获取一级菜单*/
+                            getMenu('07');
+                        </script>
+                    </ul>
+                </div>
+
+                <!-----------------广告位-------------------->
+                <div class="slide-ad">
+                    <div id="AdSlide" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <script type="text/javascript">
+                                getAd('AdSlide');//获取01号广告位
+                                //setSwiperHeight('AdSlide');/*设置swiper的高度*/
+                            </script>
+                        </div>
+                    </div>
+                    <div class="pagination-news"></div>
+                </div>
+                
+                <div class="login">
+                    <div class="login_tabs">
+                        <ul class="nav nav-tabs" id="otherInfoTab">
+                            <li><a href="#time_line" id="surf">Navega en los siguientes portales</a></li>
+                            <!--<li><a href="#complain" id="facebook">Facebook Login</a></li>
+                            <li><a href="#google_pane" id="google">Google Login</a></li>-->
+                            <!--<li><a href="#wechat_pane" id="wechat">WeChat connect WiFi</a></li>-->
+                        </ul>
+                    </div>
+                    <div id="container-main">
+                        <!-- Portal 1 -->
+                        <div class="accordion-container">
+                            <a href="#" class="accordion-titulo">Portal Expreso Brasilia<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                <iframe src="https://www.expresobrasilia.com/" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <!-- Portal 2 -->
+                        <!-- <div class="accordion-container">
+                            <a href="#" class="accordion-titulo">Portal COPETRAN<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                    <iframe src="https://www.copetran.com/" frameborder="0"></iframe>
+                            </div>
+                        </div> -->
+                        <!-- Portal 3 -->
+                        <!-- <div class="accordion-container">
+                            <a href="https://www.facebook.com/" class="accordion-titulo">Portal Facebook<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                    <iframe src="https://www.facebook.com/" frameborder="0"></iframe>
+                            </div>
+                        </div> -->
+                        <!-- Portal 4 -->
+                        <!-- <div class="accordion-container">
+                            <a href="#" class="accordion-titulo">Portal Banco de Bogotá<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                    <iframe src="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota" frameborder="0"></iframe>
+                            </div>
+                        </div> -->
+                        <!-- Portal 5 -->
+                        <!-- <div class="accordion-container">
+                            <a href="#" class="accordion-titulo">Portal Banco Popular<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                    <iframe src="https://www.bancopopular.com.co/wps/portal/popular/inicio/" frameborder="0"></iframe>
+                            </div>
+                        </div> -->
+                        <!-- Portal 6 -->
+                        <!-- <div class="accordion-container">
+                            <a href="#" class="accordion-titulo">Portal Bancolombia<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                    <iframe src="https://www.grupobancolombia.com/wps/portal/personas" frameborder="0"></iframe>
+                            </div> -->
+                        </div>
+                        <!-- Portal 7 -->
+                        <!-- <div class="accordion-container">
+                            <a href="#" class="accordion-titulo">Portal BBVA<span class="toggle-icon"></span></a>
+                            <div class="accordion-content">
+                                    <iframe src="https://www.bbva.com.co/" frameborder="0"></iframe>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- Contenedor de botones con redireccionables de la anterior version  -->
+                        <div class="row" id="contentBottom"></div>
+                        <div class="surf_internet tab-pane" id="time_line">
+                            <div class="logo_cntr"></div>
+                            <div id="Agree_info">
+                                <!--<input type="checkbox" id="Agree_checkbox" checked />-->
+                                <div  class="agree_checkbox">
+                                    <div id="agreeCheckBox" checkValue="1" class="agree_img"><img src="../images/checkBox_choice.png"/></div>
+                                    <label>I agree
+                                        <a href="notice.html">Términos y condiciones</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn_cntr">
+                                <div id="LoginBtn" class="register_cntr">
+                                    <span>Navegar por internet</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

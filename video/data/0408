@@ -1,0 +1,33 @@
+[
+	{
+		"edited":0,
+		"groupId":"13",
+		"handler":{},
+		"id":"0402_1514399400005",
+		"img":"../image/posterSerie/serie1/serie1Cap1.jpg",
+		"isDelete":0,
+		"menu":{"$ref":"$[0].menu"},
+		"plot":"<p>Frends</p>",
+		"poster":"Teleplay",
+		"sort":3,
+		"src":"../video/series/serie1/cap1.mp4",
+		"pub":"../video/preRoll/Underarmor.mp4",
+		"title":"'Friends' 1x1: En el que todo empieza",
+		"updateTime":1524549037000
+	},
+	{
+		"edited":0,
+		"groupId":"13",
+		"handler":{},
+		"id":"0402_1514399400006",
+		"img":"../image/posterSerie/serie1/serie1Cap2.jpg",
+		"isDelete":0,
+		"menu":{"$ref":"$[0].menu"},
+		"plot":"<p>Frends1</p>",
+		"poster":"Teleplay",
+		"sort":2,"src":"../video/series/serie1/cap1.mp4",
+		"pub":"../video/preRoll/nissan.mp4",
+		"title":"'Friends' 1x2: El de la ecografía al final",
+		"updateTime":1524549037000
+	}
+]

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>微信连Wi-Fi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" type="text/css" href="../../common/css/showLoading/showLoading.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/public.css">
+    <link rel="stylesheet" href="../../common/css/style-simple-follow.css"/>
+    <style>
+        .mod-simple-follow-page__attention a.hover{
+            background-color: #029501;
+        }
+        .btnClick{
+            background-color: #028201;
+        }
+        a,a:hover,a:active{
+            text-decoration: none;
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body class="mod-simple-follow" onload="windowonload()">
+<!--<body class="mod-simple-follow">-->
+<div id="" class="login_container">
+    <div class="container">
+        <div class="header">
+            <div class="menu-btn"></div>
+            <div class="center-block header-center">
+                <img class="img-responsive" src="../../common/image/header_logo.png"/>
+            </div>
+        </div>
+
+        <div class="mod-simple-follow-page">
+            <div class="mod-simple-follow-page__banner">
+                <img class="mod-simple-follow-page__banner-bg" src="../../common/image/weixin/background.jpg" alt=""/>
+                <div class="mod-simple-follow-page__img-shadow"></div>
+                <div class="mod-simple-follow-page__logo">
+                    <img class="mod-simple-follow-page__logo-img" src="../../common/image/weixin/t.weixin.logo.png" alt=""/>
+                    <p class="mod-simple-follow-page__logo-name"></p>
+                    <p class="mod-simple-follow-page__logo-welcome">Welcome</p>
+                </div>
+            </div>
+            <div class="mod-simple-follow-page__attention">
+                <p class="mod-simple-follow-page__attention-txt">Welcome to WeChat connected to Wi-Fi</p>
+                <a id="clickbtn" class="mod-simple-follow-page__attention-btn" onclick="callWechatBrowser()">Open WeChat connected to WiFi</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="../../common/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.showLoading.min.js"></script>
+<script type="text/javascript" src="../../common/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.hongdian.js"></script>
+<script type="text/javascript" src="../../common/js/base/base.js"></script>
+<script src="../../common/js/md5.js"></script>
+<script type="text/javascript">
+    //是否苹果
+    var isApple = function(){
+        var os = navigator.platform.toLowerCase();
+        if(os.indexOf("ipad") != -1 || os.indexOf("iphone") != -1 ){
+            return true;
+        }
+        return false;
+    };
+
+    //ios视频问题
+    function windowonload(){
+        if(isApple()){
+            $.post("../../common/api/ios_auth.php");
+        }
+    }
+
+    function callWechatBrowser(){
+        $("#clickbtn").addClass('btnClick');
+        var expireNetFlow = 100;
+        $.ajax({
+            method: 'post',
+            url: "../../common/api/acc_auth.php",
+            data:'type=1&expireNetFlow=' +expireNetFlow+'&expireTime=80',
+            dataType: 'json',
+            success: function(data) {
+                if(data['code'] != 'ok') {
+                    $('.error_detail').text('Network can not connect');
+                } else {
+                    console.log(data);
+                    // window.location.href = 'http://www.hao123.com';
+                    setTimeout(function(){
+                        window.location.href = 'weixin.html';
+                    }, 3000);
+                }
+            },
+            complete:function(XMLHttpRequest,status){
+
+            }
+        });
+
+    }
+
+    /*跳转到主页*/
+    $(".menu-btn").click(function(){
+        var resId = "02";
+        var resName = "home";
+        var resType = resId;
+        $.hongdian.uploadData({
+            resId:resId,
+            resName:resName,
+            resType:resType,
+            click:1,
+            flag:1//资源类型为菜单（0：普通资源，1：菜单，2：广告）
+        }, function() {
+            window.location.href = "../../homePage/web/homePage.html";
+        });
+
+    });
+</script>
+</html>

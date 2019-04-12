@@ -1,0 +1,73 @@
+ /************slides控件样式********************/
+ 
+
+ .slidesjs-navigation {
+      margin-top:3px;
+    }
+	.slidesjs-play{
+		 display:none !important;
+	}
+     .slidesjs-stop{
+		 display:none !important;
+	}
+      .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+	  display:none;
+    }
+
+    .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+	  display:none;
+    }
+
+    .slidesjs-pagination {	
+		position: relative;
+		top: -20px;
+		margin: 0 auto;
+		width: 100px;
+		z-index: 50;
+		list-style: none;
+		height:10px;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+        background-image: url(../../image/slidesjs/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    a:link,
+    a:visited {
+      color: #333
+    }
+
+    a:hover,
+    a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+

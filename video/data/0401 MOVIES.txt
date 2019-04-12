@@ -1,0 +1,48 @@
+El archivo "0401" contiene la lista de las películas que se ven en la pagina
+de media.
+Para poder modificar la imagen se debe ingresar al siguiente directorio.
+sr: ../video/image/posterMovie/
+Aquí vamos a introducir las imágenes de las diferentes películas que queremos colocar.
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+
+EJ: infinity-war.jpg
+
+Para cambiar o introducir una nueva película se tiene que colocar el archivo
+.mp4 en la siguiente dirección.
+Src: video/video/movies/
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+
+EJ: infinity-war.mp4
+
+Para cambiar o introducir un nuevo video pre-roll se debe guardar el archivo .mp4 en la siguiente dirección.
+Src: video/video/preRoll/
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+EJ: nissan.mp4
+
+
+-->CÓDIGO A MODIFICAR<--
+{
+"id":"0401_1514399400000",
+"title":"Infinity War", <-- Se cambia el título de la nueva película.
+"img":"../image/posterMovie/infinity-war.jpg", <-- Se cambia por el título de la película a introducir.
+"src":"../video/movies/infinity-war.mp4", <-- Se cambia por el nombre de la nueva pelicula.
+"pub":"../video/nissan.mp4", <-- Se cambia por el nombre de un nuevo video pre-roll.
+"poster":"Movie",
+"plot":"<p>Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo..</p>"
+}
+
+-->CÓDIGO A COPIAR<--
+{
+"id":"0401_1514399400005",
+"title":"Los increibles 2 (2018)",
+"img":"../image/posterMovie/los-increibles-2.jpg",
+"src":"../video/movies/los-increibles-2.mp4",
+"pub":"../video/preRoll/Roadlodge.mp4",
+"poster":"Movie",
+"plot":"<p>Helen entra en acción y debe luchar contra un cibercriminal que planea hipnotizar el mundo a través de las pantallas de las computadoras. Eso deja al Sr. Increíble con uno de sus mayores desafíos: quedarse en casa y cuidar de tres niños traviesos.</p>"
+}
+
+*En el ultimo corchete "}" antes de este codigo para copiar debe de haber un corchete con una coma == "},".

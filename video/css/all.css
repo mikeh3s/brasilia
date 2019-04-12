@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+BODY, H1, H2, H3, H4, H5, H6, HR, P, BLOCKQUOTE, DL, DT, DD, UL, OL, LI, PRE, FORM, FIELDSET, LEGEND, BUTTON, TEXTAREA, LABEL {
+	padding:0px;
+	margin:0px;
+	border:0px;
+ font-size:12px;
+	color:#7b7b7b;
+}
+UL {
+	LIST-STYLE-TYPE: none;
+	LIST-STYLE-IMAGE: none
+}
+OL {
+	LIST-STYLE-TYPE: none;
+	LIST-STYLE-IMAGE: none
+}
+a{
+ 
+	TEXT-DECORATION: none;
+  font-size:14px
+}
+ 
+ 
+div {
+	 font-size:14px;
+	 font-family:'微软雅黑';
+}
+img {
+	border:0 none
+}
+li {
+	list-style-type:none
+}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*media 不同大小的设备时容器的宽度*/
+@media (min-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 640px;
+  } 
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 640px;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+#showAdDiv{
+  position: relative;
+}
+/* modul */
+.content-modul{
+	padding: 5px 2px 10px 2px;
+}
+.modul-padding-right{
+	padding-right: 0px;
+}
+.modul-padding-left{
+    padding-left: 0px;
+}
+
+#news{
+	margin:10px 0;
+}

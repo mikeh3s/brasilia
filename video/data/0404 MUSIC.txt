@@ -1,0 +1,63 @@
+El archivo "0404  " contiene la lista de las canciones que se ven en la pagina
+de media en el apartado de musica.
+Para poder modificar la imagen se debe ingresar al siguiente directorio.
+sr: ../image/music/music_img/posterMusic/
+Aquí vamos a introducir las imágenes de los diferentes videos que queremos colocar.
+Se debe guardar con el nombre de la cancion que se quiera mostrar
+todo junto en minusculas separado solo por "-" para evitar confusiones.
+
+EJ: amores-como-el-nuestro.jpg
+
+Para cambiar o introducir una nueva letra para la cancion se tiene que colocar el archivo
+".lrc" en la siguiente dirección.
+Src: ../image/music/music_img/lrcMusic/
+Se debe guardar con el nombre de la cancion que se quiera mostrar
+todo junto en minusculas separado solo por "-" para evitar confusiones.
+
+EJ: amores-como-el-nuestro.lrc
+
+Para cambiar o introducir una nueva cancion se tiene que colocar el archivo
+.mp3 en la siguiente dirección.
+Src: video/music/
+Se debe guardar con el nombre de la cancion que se quiera mostrar
+todo junto en minusculas separado solo por "-" para evitar confusiones.
+
+EJ: amores-como-el-nuestro.mp3
+
+
+-->CÓDIGO A MODIFICAR<--
+
+
+{
+  "artist":"Fifth Harmony", <-- Se cambia por el nombre del nuevo artista.
+  "edited":0,"groupId":"13",
+  "handler":{},
+  "id":"0404_1514399400017", <-- Se cambia el ultimo numero por el de la siguiente sucesión para identificar el id.
+  "img":"../image/music/music_img/posterMusic/worth-it.jpg", <-- Se cambia el nombre del archivo “.jpg”.
+  "isDelete":0,
+  "lrc_path":"../image/music/music_img/lrcMusic/worth-it.lrc", <-- Se cambia el nombre del archivo “.lrc”.
+  "menu":{"$ref":"$[0].menu"},
+  "sort":1,
+  "src":"../music/worth-it.mp3", <-- Se cambiar por el nombre de la nueva cancion.
+  "title":"Worth It", <-- Se cambia por el titulo de la nueva cancion.
+  "updateTime":1524549037000
+}
+
+-->CÓDIGO A COPIAR<--
+-->Los archivos de ese codigo ya estan listos, solo basta con copiarlo en el directorio "video/data/0403"
+*Este codigo se debe copiar en el ultimo corchete "}" antes de este codigo para copiar debe de haber un corchete con una coma == "},".
+
+{
+  "artist":"Jerry Rivera",
+  "edited":0,"groupId":"13",
+  "handler":{},
+  "id":"0404_1514399400019",
+  "img":"../image/music/music_img/posterMusic/amores-como-el-nuestro.jpg",
+  "isDelete":0,
+  "lrc_path":"../image/music/music_img/lrcMusic/amores-como-el-nuestro.lrc",
+  "menu":{"$ref":"$[0].menu"},
+  "sort":4,
+  "src":"../music/amores-como-el-nuestro.mp3",
+  "title":"Amores Como El Nuestro",
+  "updateTime":1524549037000
+}

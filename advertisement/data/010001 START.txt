@@ -1,0 +1,49 @@
+El archivo "010001" contiene la configuraci�n de las imagenes
+del primer espacio publicitario.
+La primera linea de codigo ({"interval":"2",) determina el tiempo en segundos para cada anuncio.
+Para modificarlo solo se debe cambiar el numero ("2") por el tiempo en segundos al que se le quiere dar a cada anuncio.
+
+Contiene un espacio para 4 anuncios base.
+
+Para introducir nuevos anuncios primero hay que guardarlas en la capeta "adStart"
+direcci�n de la carpeta --> " /h3sbuswifi/advertisement/image/adStart".
+Cuando se tienen las imagenes se les debe cambiar el nombre seg�n el numero de anuncios.
+Ej:
+Primer aviso publicitario = "ad1.jpg"
+Segundo aviso publicitario = "ad2.jpg"
+Sucesivamente para un numero de 4 anuncios base.
+
+Para agregar mas de 4 anuncios el codigo base es el siguiente.
+
+Copiar el codigo despues del ultimo "}" y antes de "]}".
+
+-->>Modificaci�nes a hacer dentro del codigo.<<--
+
+{
+  "adPosition":{"$ref":"$.img[0].adPosition"},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"", <-- Este es el link al que se direcciona si alguien le da click al anuncio.
+  "id":"010101_140523_004", <--- Se cambia solo el ultimo numero seg�n el numero del anuncio.
+  "imgsrc":"../../advertisement/image/adStart/ad4.jpg", <-- Aqu� se cambia el nombre del archivo seg�n el numero del anuncio Ej: "ad4.jpg".
+  "isDelete":0,
+  "sort":1,
+  "title":"Full_Ad_4", <-- Este es el titulo del anucio que aparece como leyenda cuando se esta sobre el.
+  "updateTime":1524549037000
+},
+
+-->>Codigo para copiar.<<---
+{
+  "adPosition":{"$ref":"$.img[0].adPosition"},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"",
+  "id":"010101_140523_005",
+  "imgsrc":"../../advertisement/image/adStart/ad5.jpg",
+  "isDelete":0,
+  "sort":1,
+  "title":"Full_Ad_5",
+  "updateTime":1524549037000
+}

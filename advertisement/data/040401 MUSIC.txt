@@ -1,0 +1,55 @@
+
+El archivo "040401" contiene la configuraci�n de las imagenes
+del banner publicitario horizontal superior de la pagina de musica:
+direccion: "../video/web/music.html".
+
+La primera linea de codigo ({"interval":"2",) determina el tiempo en segundos para cada anuncio.
+Para modificarlo solo se debe cambiar el numero ("2") por el tiempo en segundos al que se le quiere dar a cada anuncio.
+
+Contiene un espacio para 3 anuncios base.
+
+Para introducir nuevos anuncios primero hay que guardar las imagenes en la capeta "musicHorizonAd"
+direcci�n de la carpeta --> "/Resources/h3sbuswifi/advertisement/image/musicHorizonAd".
+Cuando se tienen las imagenes dentro de la carpeta se les debe cambiar el nombre seg�n el numero de anuncios.
+Ej:
+Primer aviso publicitario = "mhad1.jpg"
+Segundo aviso publicitario = "mhad2.jpg"
+Sucesivamente para un numero de 3 anuncios base.
+
+Para agregar mas de 3 anuncios el codigo base es el siguiente.
+
+Copiar el codigo despues del ultimo "}" y antes de "]}".
+
+-->>Modificaci�nes a hacer dentro del codigo.<<--
+
+{
+  "adPosition":{"$ref":"$.img[0].adPosition"},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"/video/video/007.mp4", <-- Este es el link al que se direcciona si alguien le da click al anuncio.
+  "id":"040401_140521_002", <--- Se cambia solo el ultimo numero seg�n el numero del anuncio.
+  "imgsrc":"../../advertisement/image/musicHorizonAd/mhad1.jpg", <-- Aqu� se cambia el nombre del archivo seg�n el numero del anuncio Ej: "mhad1.jpg".
+  "isDelete":0,
+  "plot":"",
+  "sort":2,
+  "title":"Music_TopAd_2", <-- Este es el titulo del anucio que aparece como leyenda cuando se esta sobre el.
+  "updateTime":1524549037000
+},
+
+-->>Codigo para copiar.<<---
+
+{
+  "adPosition":{"$ref":"$.img[0].adPosition"},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"/video/video/007.mp4",
+  "id":"040401_140521_003",
+  "imgsrc":"../../advertisement/image/musicHorizonAd/mhad1.jpg",
+  "isDelete":0,
+  "plot":"",
+  "sort":1,
+  "title":"Music_TopAd_3",
+  "updateTime":1524549037000
+}

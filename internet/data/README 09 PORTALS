@@ -1,0 +1,37 @@
+Este archivo corresponde a la pagina approve.html donde se encuentran los portales al los cuales puede
+acceder las personas que se encuentren en el bus.
+Para modificar las imagenes debemos descargarlas e introducirlas en la siguiente direccion:
+/internet/image/imgPages/
+Se recomienda colocar el nombre en minusculas y sin espacios, solamente separados por un guion.
+EJ: "portal-claro.png"
+
+
+ Codigo a modificar.
+ {
+   "edited":0,
+   "groupId":"13",
+   "handler":{},
+   "href":"https://www.bbva.com.co/", <-- Aqui se modifica la URL a la que se quiere direccionar el portal.
+   "id":"10", <-- Este es el ID que identifica la funcion para las estadisticas.
+   "img":"../image/imgPages/bbva.png", <-- SRC de la imagen.
+   "isDelete":0,
+   "menu":{"$ref":"$[0].menu"},
+   "sort":2,
+   "title":"Banco BBVA", <-- Titulo leyend del portal.
+   "updateTime":1527521166000
+ }
+
+ Codigo a copiar
+ {
+   "edited":0,
+   "groupId":"13",
+   "handler":{},
+   "href":"https://www.copetran.com/",
+   "id":"11",
+   "img":"../image/imgPages/copetran.png",
+   "isDelete":0,
+   "menu":{"$ref":"$[0].menu"},
+   "sort":2,
+   "title":"Copetran",
+   "updateTime":1527521166000
+ }

@@ -1,0 +1,50 @@
+El archivo "020102" contiene la configuraci�n de las imagenes
+del banner publicitario vertical izquierdo inferior de la pagina "homePage.html".
+
+La primera linea de codigo ({"interval":"2",) determina el tiempo en segundos para cada anuncio.
+Para modificarlo solo se debe cambiar el numero ("2") por el tiempo en segundos al que se le quiere dar a cada anuncio.
+
+Contiene un espacio para 3 anuncios base.
+
+Para introducir nuevos anuncios primero hay que guardar las imagenes en la capeta "homeVerticalAd"
+direcci�n de la carpeta --> "/Resources/h3sbuswifi/advertisement/image/homeVerticalAd".
+Cuando se tienen las imagenes se les debe cambiar el nombre seg�n el numero de anuncios.
+Ej:
+Primer aviso publicitario = "hvad1.jpg"
+Segundo aviso publicitario = "hvad2.jpg"
+Sucesivamente para un numero de 3 anuncios base.
+
+Para agregar mas de 3 anuncios el codigo base es el siguiente.
+
+Copiar el codigo despues del ultimo "}" y antes de "]}".
+
+-->>Modificaci�nes a hacer dentro del codigo.<<--
+
+{
+  "adPosition":{"$ref":"$.img[0].adPosition"},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"", <-- Este es el link al que se direcciona si alguien le da click al anuncio.
+  "id":"020102_140521_002", <--- Se cambia solo el ultimo numero seg�n el numero del anuncio.
+  "imgsrc":"../../advertisement/image/homeVerticalAd/hvad2.jpg", <-- Aqu� se cambia el nombre del archivo seg�n el numero del anuncio Ej: "hvad4.jpg".
+  "isDelete":0,
+  "sort":2,
+  "title":"Home_VerticalAd_2",<-- Este es el titulo del anucio que aparece como leyenda cuando se esta sobre el.
+  "updateTime":1524549037000
+},
+
+-->>Codigo para copiar.<<---
+{
+  "adPosition":{"$ref":"$.img[0].adPosition"},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"",
+  "id":"020102_140521_003",
+  "imgsrc":"../../advertisement/image/homeVerticalAd/hvad3.jpg",
+  "isDelete":0,
+  "sort":1,
+  "title":"Home_VerticalAd_3",
+  "updateTime":1524549037000
+}

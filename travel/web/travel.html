@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titulo de la pagina web -->
+    <title>Viajes</title>
+
+    <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/travel.css">
+  	<!-- set your website favicon -->
+    <link rel="icon" type="image/jpg" href="../../common/image/logo/logo.png">
+
+    <script type="text/javascript" src="../../common/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../../common/js/jquery.hongdian.js"></script>
+    <script type="text/javascript" src="../../common/js/base/base.js"></script>
+    <script type="text/javascript" src="../../common/js/menu/menu.js"></script>
+    <script type="text/javascript" src="../../common/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../common/js/idangerous.swiper.js"></script>
+    <script type="text/javascript" src="../js/travel.js"></script>
+
+    <script src="../../common/js/base/get_ad.js"></script>
+</head>
+<body>
+    <div id="" class="container">
+        <!-----------------顶部logo-------------------->
+        <div class="header">
+            <div class='menu-btn'></div>
+            <div class='center-block header-center'>
+                <img class='img-responsive' src='../../common/image/top_logo.png'/>
+            </div>
+        </div>
+
+        <!-----------------一级菜单-------------------->
+        <div  id="video_ad_div"  class="main_menu">
+            <ul class="nav menu-ul">
+                <script type="text/javascript">
+                    /*获取一级菜单*/
+                    getMenu('08');
+                </script>
+            </ul>
+        </div>
+
+        <!-----------------广告位-------------------->
+        <div class="slide-ad">
+            <div id="TravelAdSlide" class="swiper-container">
+                <div class="travel-wrapper swiper-wrapper">
+                    <script type="text/javascript">
+                        getAd('TravelAdSlide');//获取01号广告位
+                    </script>
+                </div>
+            </div>
+            <div class="pagination-news"></div>
+        </div>
+
+        <!-----------------景点列表-------------------->
+        <div class="travel_content">
+
+        </div>
+
+    </div>
+</body>
+</html>

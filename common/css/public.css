@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {height: 100%;width: 100%;margin: 0;padding: 0;font: 12px Arial,"宋体","Microsoft Yahei";}
+/*bootstrap style class*/
+.list-group-item:first-child {border-top-left-radius: 0px; border-top-right-radius: 0px;}
+.list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.row {margin-right: 0px;margin-left: 0px;}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+img, object, audio {
+    max-height: 100%;
+    /*display: block;*/
+    display: inline-block;
+    max-width: 100%;
+    /*height: auto;*/
+}
+
+.container{padding-right: 0px;padding-left: 0px;}
+.img-inline{display: inline;}
+
+/* header */
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.header-center{width: 120px; margin-top: 2%;}
+
+/**一级菜单**/
+.main_menu{
+    position: fixed;
+    top: 48px;
+    background-color: #eeeeee;
+    overflow: hidden;
+    width: 100%;
+    height: 35px;
+    line-height:35px;
+    text-align:center;
+    font-size:18px;
+    z-index: 1000;
+}
+.main_menu .nav > li > a{padding: 0;color: #21ca41;}
+.main_menu .nav > li > a:hover , .main_menu .nav > li > a:focus{background-color: transparent;}
+.menu-ul .col-xs-3{width: 25%;}
+.menu_a{z-index: 1001;}
+
+/* menu */
+.menu-btn {position: absolute;left: auto;margin-left: -5px;top: 0px;bottom: 0;width: 55px;height: 48px;background: url(../image/cityPasshome_home.png) no-repeat;background-size: 65px 45px;}
+/* slide advertisement*/
+.slide-ad{text-align: center;position: relative;margin-top: 84px;}
+/*菜单导航*/
+.tabs-navbar{position: relative;padding:0;/*background-color: #f0f0f0;*/height: 35px;}
+.tabs-navbar ul{margin: 0;padding: 0;overflow:hidden;}/*解决子元素使用了float属性后离当前HTML文档流，当前HTML文档会当作设置float属性的元素不存在一样，使的父元素的高度为0*/
+.tabs-navbar li{position: relative;display: inline;height: 40px;line-height: 40px;text-align: center;font-size: 18px;}
+/*.nav-active{background-color: #3399ff;color: #ffffff;}*/
+/*更多信息*/
+.more_info_container {float: left;width: 100%;height: 40px;line-height: 40px;text-align: center;margin-top: 20px;border-top: 1px solid #d6e0e5;font-size: 16px;font-weight: bold;}
+.more_info {color: #699f00;}
+
+.back_btn {position: absolute;left: auto;margin: -6px 0 0 -10px;top: 0px;bottom: 0;width: 65px;height: 60px;background: url(../image/arrow.png) no-repeat;background-size: 65px 60px;}
+/*slide ad*/
+.pagination-news {position: absolute;left: 0;text-align: center;bottom: 5px;width: 100%;z-index: 100;}
+/***选中的菜单样式**/
+/* Aqui se cambian los colores del menu */
+.cur_menu{background-color: #23b3a0 !important;color: #ffffff !important;}
+
+.tabs-navbar li{
+    position: relative;
+    display: inline;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    outline-offset:0;
+}
+
+.nav-active a{
+    background: none;
+    /*color: #3399ff;*/
+    color: #23b3a0;
+    font-weight: bolder;
+}
+
+.tabs-navbar li span{
+    margin-bottom: -5px;
+}
+/*.sec-menu-img{width:38px;height: 38px; margin: 5px auto 0 auto; }*/
+.sec-menu-line{height:2px;margin: -1px auto 0 auto;padding: 0;border:2px solid #23b3a0;/*border:2px solid #3399ff;*//*border-top: 0px solid #3399ff*/}
+
+/*
+.img-responsive{
+    min-width: 100%;
+}*/
+
+/* 基本弹出层样式 */
+.my-popup{
+    position: absolute;
+    top:500px;
+    width:100%;
+    /* _top:expression(eval(document.documentElement.scrollTop + 500)); */
+    padding:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+    /*opacity: 0.9;*/
+    z-index:1001;
+    text-align: center;
+    vertical-align: baseline;
+    height: 40px;
+}
+
+.my-popup-content{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    display:inline-block;
+}
+.content-modul .col-xs-5 {
+    width: 44%;
+}
+.content-modul .col-xs-7 {
+    float: right;
+    width: 55%;
+}
+/*media 不同大小的设备时容器的宽度*/
+@media (min-width: 768px) {
+    .container,.main_menu,.header {width: 640px;}
+}
+@media (min-width: 992px) {
+    .container,.main_menu,.header {width: 640px;}
+}
+@media (min-width: 1200px) {
+    .container,.main_menu,.header {width: 640px;}
+}

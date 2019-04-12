@@ -1,0 +1,23 @@
+{
+  "interval":"2",
+  "img":[{"adPosition":{"ext":"",
+  "href":"",
+  "id":"000001",
+  "menuId":"908590469248495641",
+  "pid":"",
+  "resPath":"common/",
+  "sec":[],"sort":0,
+  "title":"Logo",
+  "tplId":0,
+  "updateTime":1505461151000},
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "href":"",
+  "id":"000001_001",
+  "imgsrc":"../../common/image/logo_claro.png",
+  "isDelete":0,
+  "sort":1,
+  "title":"Logo",
+  "updateTime":1524549037000}
+]}

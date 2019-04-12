@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>H3S WIFI</title>
+
+    <link rel="stylesheet" href="../../common/css/slidesjs/slidesjs.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.css">
+    <link rel="stylesheet" href="../../common/css/jquery-confirm.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/audio.css">
+</head>
+<body>
+    <div class="container">
+        <!-----------------顶部logo-------------------->
+        <div class="header" style="margin-bottom: 0;">
+            <div class='back_btn' id="back_btn"></div>
+            <div class='center-block header-center'>
+                <!--<img class='img-responsive' src='../../common/image/top_logo.png'/>-->
+            </div>
+        </div>
+
+        <div class="audio_container">
+            <div class="audio_header clearfix">
+                <div class="audio_info">
+                    <label class="audio_name"></label>
+                    <label class="author"></label>
+                </div>
+                <div class="lrctxtshow">
+                    <img src="../image/music/voice_txt.png">
+                    <!--<div style="background:#ff5857; width: 32px;height: 32px;border-radius: 16px;">Lrc</div>-->
+                </div>
+            </div>
+
+            <div class="audio_main">
+                <div class="audio_wrap">
+                    <canvas id="progress" width="320" height="320">Your browser does not support canvas</canvas>
+                    <div class="wheel"></div>
+                    <div class="audio_player">
+                        <img id='imgId' onerror="javascript:this.src='../image/music/music_img/music_default.png?v=1.5.0'" src="../image/music/music_img/music_default.png">
+                        <audio id="audio" autoplay preload="none" onerror="nofind();">Sorry,your browser does not support audio for the moment！</audio>
+                    </div>
+                    <div id="play_pause" class="controls play" ></div>
+                </div>
+
+
+                <div class="audio_buttons">
+                    <div class="nest-prerious row">
+                        <div class="col-xs-6 col-sm-6">
+                            <a id='nfav_btn'  name='nfav0'>
+                                <!--<img class='icon unlike_btn show' src="../image/music/muisc_Previous.png">-->
+                                <div class='icon unlike_btn show'></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                            <a id='next_song' >
+                                <!--<img class='icon next_song_btn show' src="../image/music/music_next.png">-->
+                                <div class='icon next_song_btn show'></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="soundbtn row">
+                        <a id='fav_btn'  name='fav0' class="play_type">
+                            <!--<img class='icon like_btn show ' src="../image/music/order_play.png">-->
+                            <div class="order_play"></div>
+                            <p style="display: none;color: #888;">repeat all songs</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="progresser">
+                    <div class="timer">00:00</div>
+                    <div class="slider">
+                        <div class="loaded"></div>
+                        <div class="pace"></div>
+                    </div>
+                    <div class="duration">00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div id='lrc' class="lyrics">
+            <div class="audiotxtshow">
+                <img src="../image/music/voice_img.png">
+            </div>
+            <div class="music_name"></div>
+            <div class="singer"></div>
+            <div class="lrc_content">
+                <!--div id='lrcBox' class='lyric_box' data-offset='0'></div-->
+                <ul id='lrcBox' class='lrcbox'></ul>
+                <ul id='no-lrc' class='lrcbox'></ul>
+            </div>
+            <div class='blank'></div>
+        </div>
+</div>
+
+    <script type="text/javascript" src="../../common/js/jquery-1.7.2.min.js"></script>
+    <!--<script type="text/javascript" src="../../common/js/bootstrap.js"></script>-->
+    <script src="../../common/js/jquery.slides.min.js"></script>
+    <script src="../../common/js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="../../common/js/jquery.hongdian.js"></script>
+    <script type="text/javascript" src="../../common/js/base/base.js"></script>
+    <script type="text/javascript" src="../js/lrc.js"></script>
+    <script type="text/javascript" src="../js/shake.js"></script>
+    <script src="../../common/js/jquery-confirm.js"></script>
+    <script type="text/javascript" src="../js/musicDetail.js"></script>
+
+</body>
+</html>

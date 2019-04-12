@@ -1,0 +1,23 @@
+  {
+    "interval":"2",
+    "img":[{"adPosition":{"id":"030101",
+    "menuId":"908590469248495625",
+    "pid":"908256221270433798",
+    "resPath":"advertisement/",
+    "sec":[],
+    "sort":1,
+    "title":"Headline",
+    "tplId":0,
+    "updateTime":1505461114000},
+    "edited":0,
+    "groupId":"13",
+    "handler":{},
+    "href":"",
+    "id":"030101_140521_001",
+    "imgsrc":"../../advertisement/image/newsHorizonAd/nhad1.jpg",
+    "isDelete":0,
+    "sort":3,
+    "title":"News_TopAd_1",
+    "updateTime":1524549037000
+  }
+]}
