@@ -9,9 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgba(0,0,0,0.8);
-  filter:brightness(0.4);
-  background-image: url("../../image/back.jpg" );
+  background-color: rgba(255, 255, 255, 0.8);
+  /* filter:brightness(0.4); */
+  /* background-image: url("../../image/back.jpg" ); */
   width: 100%;
   height: 100%;
   background-position: center;
@@ -31,8 +31,8 @@
 .item-wrap{border:2px solid #ccc;border-radius:5px;margin:20px auto;padding:30px 15px 0;width:100%; align-items: center;}
 .item-info {justify-content: center; text-align: center;}
 .item-image img{border:1px solid #ccc;border-radius:5px;width:100%;}
-.item-title{color:#ffffff;font-size:1.6em;font-weight:bold;margin:0 auto 30px;}
-.text-center{color:#eeeaea;font-size:1.8em;font-weight:bold;margin:0 auto 30px;}
+.item-title{color:#005baa;font-size:1.6em;font-weight:bold;margin:0 auto 30px;}
+.text-center{color:#005baa;font-size:1.8em;font-weight:bold;margin:0 auto 30px;}
 .offer-main-buttons{border-radius:5px;font-weight:bold;max-width:210px;}
 .offer-main-button-btn{background:#0097e6;border-radius:5px;padding:10px 0;margin:30px 0 0;cursor:pointer;transition:background 0.4s ease 0s;}
 .offer-main-button-btn-txt{font-size:20px;color:#fff;display:block;text-align:center;}
@@ -73,7 +73,7 @@ radial-gradient(transparent 66%, transparent 66%);}
 .popup-form .input-group-icon{position:absolute;top:0;}
 /* Cambiar color de los inputs */
 .popup-form .form-group .input-group-icon{background-color:#1e739e;border:none;border-radius:4px;border-bottom-right-radius:0;border-top-right-radius:0;color:#fff;display:table-cell;font-size:14px;height:100%;padding:5px 7px 7px;text-align:center;vertical-align:top;white-space:nowrap;width:40px;}
-.popup-form .form-control{color: white;background-color:transparent;border:1px solid #304f6f;padding-left:50px; display: inline-block;
+.popup-form .form-control{color: #005baa;background-color:transparent;border:1px solid #304f6f;padding-left:50px; display: inline-block;
     vertical-align: middle; }
 .popup-form .form-control:focus, .popup-form .has-error .form-control:focus{border-color:#f58e03;box-shadow:0 1px 1px rgba(245, 142, 3, 0.075) inset, 0 0 8px rgba(245, 142, 3, 0.6);}
 .popup-form .form-control:focus + .input-group-icon, #resetPassForm .has-error .form-control:focus + .input-group-icon{background-color:#f58e03;color:#fff;}
@@ -93,7 +93,7 @@ radial-gradient(transparent 66%, transparent 66%);}
 .popup-form .form-group h5{margin-top:0;}
 .terms {display: inline-block;
     padding-left: 15px;
-    text-indent: -15px;
+    text-indent: 15px;
      vertical-align: middle; }
 #humanCheckCaptchaInput.form-control{height:30px;margin-left:10px;padding:4px;text-align:center;width:45px;}
 #humanCheckCaptchaBox, #humanCheckCaptchaInput, #firstDigit, #secondDigit, #mathfirstnum, #mathsecondnum{display:inline;}
