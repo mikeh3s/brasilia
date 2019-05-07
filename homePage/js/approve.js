@@ -492,64 +492,64 @@ function getJumpurl(){
  * login() 直接上网 //Acceso directo a internet
  * 参数说明://Descripción del parámetro:
  */
-// function login(){
-//     $("#LoginBtn").click(function(){
-//         if(!isModem){
-//             //GenerateNewPopup('亲，网络开小差啦，请您先浏览本地资源哦！',5); //Estimado, la red se está agotando, ¡por favor busque primero los recursos locales!
-//             $("#internetNotOK").css("display","block");
-//             setTimeout(function(){
-//                 $("#internetNotOK").css("display","none");
-//             },3000)
-//             return;
-//         }
-//         console.log("直接上网");
-//         var checkValue = $("#agreeCheckBox").attr("checkValue");
-//         if(checkValue == 0){
-//             return;
-//         }
-//         $('.error_detail').text("");
+/** function login(){
+    $("#LoginBtn").click(function(){
+        if(!isModem){
+            //GenerateNewPopup('亲，网络开小差啦，请您先浏览本地资源哦！',5); //Estimado, la red se está agotando, ¡por favor busque primero los recursos locales!
+            $("#internetNotOK").css("display","block");
+            setTimeout(function(){
+                $("#internetNotOK").css("display","none");
+            },3000)
+            return;
+        }
+        console.log("直接上网");
+        var checkValue = $("#agreeCheckBox").attr("checkValue");
+        if(checkValue == 0){
+            return;
+        }
+        $('.error_detail').text("");
 
-//         $(".container").showLoading();
-//         var expireNetFlow = 100;//外网流量
+        $(".container").showLoading();
+        var expireNetFlow = 100;//外网流量
 
-//         var behavior = "2";//1、注册；2、登录；3、获取验证码
-//         var respStatus= "";//0、成功；-1、失败；-2、流量已用完；-3、网络未响应
-//         var respMsg = "";
-//         var mobile = "";
+        var behavior = "2";//1、注册；2、登录；3、获取验证码
+        var respStatus= "";//0、成功；-1、失败；-2、流量已用完；-3、网络未响应
+        var respMsg = "";
+        var mobile = "";
 
-//         $(".login_container").showLoading();
-//         $.ajax({
-//             method: 'post',
-//             url: "../../common/api/acc_auth.php",
-//             data:'type=1&expireNetFlow=' +expireNetFlow,
-//             dataType: 'json',
-//             success: function(data) {
-//                 if(data['code'] != 'ok') {
-//                     $('.error_detail').text('Network can not connect');
-//                     //认证行为上报//Informe de comportamiento de certificación.
-//                     respStatus = "-3";
-//                     userAuthBehavior(behavior,respStatus,respMsg,mobile);
-//                 } else {
-//                    // window.location.href = 'http://www.hao123.com';
+        $(".login_container").showLoading();
+        $.ajax({
+            method: 'post',
+            url: "../../common/api/acc_auth.php",
+            data:'type=1&expireNetFlow=' +expireNetFlow,
+            dataType: 'json',
+            success: function(data) {
+                if(data['code'] != 'ok') {
+                    $('.error_detail').text('Network can not connect');
+                    //认证行为上报//Informe de comportamiento de certificación.
+                    respStatus = "-3";
+                    userAuthBehavior(behavior,respStatus,respMsg,mobile);
+                } else {
+                   // window.location.href = 'http://www.hao123.com';
 
-//                     setTimeout(function(){
-//                         jumpHref(mobile);
-//                     }, 3000);
-//                     //认证行为上报
-//                     respStatus = "0";
-//                     userAuthBehavior(behavior,respStatus,respMsg,mobile);
-//                 }
-//                 //jumpHref(mobile);
-//             },
-//             complete:function(XMLHttpRequest,status){
-//                 setTimeout(function(){
-//                     $(".login_container").hideLoading();
-//                 }, 3000);
-//             }
-//         });
-//     });
-// };
-
+                    setTimeout(function(){
+                        jumpHref(mobile);
+                    }, 3000);
+                    //认证行为上报
+                    respStatus = "0";
+                    userAuthBehavior(behavior,respStatus,respMsg,mobile);
+                }
+                //jumpHref(mobile);
+            },
+            complete:function(XMLHttpRequest,status){
+                setTimeout(function(){
+                    $(".login_container").hideLoading();
+                }, 3000);
+            }
+        });
+    });
+};
+*/
 
 /**
  * jumpHref(mobile,jumpUrl) 跳转链接地址s

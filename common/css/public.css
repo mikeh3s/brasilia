@@ -30,10 +30,10 @@ img, object, audio {
     top: 0px;
     width: 100%;
     height: 50px;
-    background-color: #ffffff;
+    background-image: url('../image/header.jpg');
     z-index: 1000;
 }
-.header-center{width: 120px; margin-top: 2%;}
+.header-center{width: 120px; margin-top: 2%; margin-left: 70px; display: inline-block;}
 
 /**一级菜单**/
 .main_menu{
@@ -54,6 +54,7 @@ img, object, audio {
 .menu_a{z-index: 1001;}
 
 /* menu */
+.call-b {position: absolute; margin-top: 0%; width: 120px; top: 0; padding: 0; right: 0px;}
 .menu-btn {position: absolute;left: auto;margin-left: -5px;top: 0px;bottom: 0;width: 55px;height: 48px;background: url(../image/cityPasshome_home.png) no-repeat;background-size: 65px 45px;}
 /* slide advertisement*/
 .slide-ad{text-align: center;position: relative;margin-top: 84px;}
@@ -146,7 +147,7 @@ a:hover, a:focus {
 }
 .content-modul .col-xs-7 {
     float: right;
-    width: 55%;
+    width: 44%;
 }
 /*media 不同大小的设备时容器的宽度*/
 @media (min-width: 768px) {
