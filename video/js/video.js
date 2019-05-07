@@ -74,7 +74,7 @@ function generateMainContent(){
                     ' onclick=' + 'videoEvent("' + video.id + '")'  +
                     ' class="col-xs-6 col-sm-3 content-cell video-type-content" item="' + mid + '" name="' + video.currentIndex + '">' +
                     '<div class="video-img">' +
-                    '<img style="height:115.75px;width:174px;" class="img-responsive" src="' + video.img +'"/>' +
+                    '<img style="height:257px;width:174px;" class="img-responsive" src="' + video.img +'"/>' +
                     '</div>' +
                     '<div class="movie_title">'+ video.title +'</div>' +
                     '</div>';

@@ -52,3 +52,58 @@
 [2019-05-07 10:57:09.307] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/ms-vscode.node-debug/dist/extension.js
 [2019-05-07 10:57:09.510] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready {"startup":false,"activationEvent":"onDebugResolve"}
 [2019-05-07 10:57:09.510] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-server-ready/dist/extension
+[2019-05-07 16:27:31.915] [exthost] [error] [vscode.html-language-features] provider FAILED
+[2019-05-07 16:27:32.080] [exthost] [error] Error: Illegal argument: character must be non-negative
+	at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:414)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:948)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:254)
+	at h (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176402)
+	at f (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176475)
+	at /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177571
+	at v (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177757)
+	at Array.map (<anonymous>)
+	at asCompletionResult (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:183119)
+[2019-05-07 16:27:33.038] [exthost] [error] [vscode.html-language-features] provider FAILED
+[2019-05-07 16:27:33.038] [exthost] [error] Error: Illegal argument: character must be non-negative
+	at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:414)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:948)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:254)
+	at h (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176402)
+	at f (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176475)
+	at /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177571
+	at v (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177757)
+	at Array.map (<anonymous>)
+	at asCompletionResult (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:183119)
+[2019-05-07 16:27:34.531] [exthost] [error] [vscode.html-language-features] provider FAILED
+[2019-05-07 16:27:34.531] [exthost] [error] Error: Illegal argument: character must be non-negative
+	at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:414)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:948)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:254)
+	at h (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176402)
+	at f (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176475)
+	at /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177571
+	at v (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177757)
+	at Array.map (<anonymous>)
+	at asCompletionResult (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:183119)
+[2019-05-07 16:27:35.224] [exthost] [error] [vscode.html-language-features] provider FAILED
+[2019-05-07 16:27:35.224] [exthost] [error] Error: Illegal argument: character must be non-negative
+	at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:414)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:948)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:254)
+	at h (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176402)
+	at f (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176475)
+	at /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177571
+	at v (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177757)
+	at Array.map (<anonymous>)
+	at asCompletionResult (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:183119)
+[2019-05-07 16:27:38.482] [exthost] [error] [vscode.html-language-features] provider FAILED
+[2019-05-07 16:27:38.482] [exthost] [error] Error: Illegal argument: character must be non-negative
+	at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:414)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:948)
+	at new p (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:327:254)
+	at h (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176402)
+	at f (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:176475)
+	at /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177571
+	at v (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:177757)
+	at Array.map (<anonymous>)
+	at asCompletionResult (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:183119)

@@ -3,7 +3,7 @@
 		"edited":0,	"groupId":	"13",
 		"handler":{},
 		"id":"0402_1514399400005",
-		"img":"../image/posterSerie/supercampeones.jpeg",
+		"img":"../image/posterSerie/seriePost1.jpg",
 		"isDelete":0,
 		"menu":{"href":"movie.html",
 		"id":"0402",
@@ -20,7 +20,7 @@
 		"sort":5,
 		"src":"../video/series/supercampeones.mp4",
 			"pub":"../video/preRoll/preroll1.mp4",
-		"title":"supercampeones",
+		"title":"The Big Bang Theory",
 		"updateTime":1524549037000
 	},
 	{

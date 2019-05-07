@@ -1,0 +1,100 @@
+El archivo "0407" contiene la lista de las series que se ven en la pagina
+de media en el apartado de pop.
+Para poder modificar la imagen se debe ingresar al siguiente directorio.
+sr: ../video/image/posterVideo/pop/
+Aquí vamos a introducir las imágenes de los diferentes videos que queremos colocar.
+Se debe guardar con el nombre de iptrack1.jpg segun el numero y orden en el que se quiera mostrar
+todo junto en minusculas separado solo por "-" para evitar confusiones.
+
+EJ: iptrack1.jpg
+
+Para cambiar o introducir un nuevo video se tiene que colocar el archivo
+.mp4 en la siguiente dirección.
+Src: video/video/videos/pop/
+Se debe guardar con el nombre de ptrack1.mp4 segun el numero y orden en el que se quiera mostrar
+todo junto en minusculas separado solo por "-" para evitar confusiones.
+
+EJ: ptrack1.mp4
+
+Para cambiar o introducir un nuevo video pre-roll se debe guardar el archivo .mp4 en la siguiente dirección.
+Se debe guardar con el nombre de la película todo junto en minusculas separado solo por "-"
+para evitar confusiones.
+Src: video/video/preRoll/
+EJ: nissan.mp4
+
+
+-->CÓDIGO A MODIFICAR<--
+
+
+{
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "id":"0403_1514399400011", <-- Se cambia el ultimo numero por el de la siguiente sucesión para identificar el id.
+  "img":"../image/posterVideo/pop/iptrack2.jpg", <-- Se cambia el nombre del archivo “.jpg”. Para agregar se sigue la sucesión de numeros. EJ: iptrack2.jpg.
+  "isDelete":0,
+  "menu":{"$ref":"$[0].menu"},
+  "plot":"<p>Music video by Capital Cities performing Safe And Sound. (C) 2013 Lazy Hooks, LLC Under Exclusive LicenseTo Capitol Records, LLC</p>",
+  "poster":"Animation",
+  "sort":4,
+  "src":"../video/videos/pop/ptrack2.mp4", <--Es la ruta del video. Solo se debe cambiar el nombre del archivo (ptrack2.mp4) “.mp4” para cambiar por un nuevo video.
+  "pub":"../video/preRoll/Burn Bumper ads.mp4",
+  "title":"Capital Cities - Safe And Sound",
+  "updateTime":1524549037000
+},
+
+-->CÓDIGO A COPIAR<--
+-->Los archivos de ese codigo ya estan listos, solo basta con copiarlo en el directorio "video/data/0406"
+*Este codigo se debe copiar en el ultimo corchete "}" antes de este codigo para copiar debe de haber un corchete con una coma == "},".
+
+{
+  "edited":0,
+  "groupId":"13",
+  "handler":{},
+  "id":"0403_1514399400012",
+  "img":"../image/posterVideo/pop/iptrack3.jpg",
+  "isDelete":0,
+  "menu":{"$ref":"$[0].menu"},
+  "plot":"<p>Written & Composed by Michael Jackson Produced by Quincy Jones for Quincy Jones Productions Co-Produced by Michael Jackson for MJJ Productions, Inc. From the album Off the Wall, released August 10, 1979 Released as a single July 10, 1979</p>",
+  "poster":"Animation",
+  "sort":3,
+  "src":"../video/videos/pop/ptrack3.mp4",
+  "pub":"../video/preRoll/Airbnb.mp4",
+  "title":"Michael Jackson - Don’t Stop 'Til You Get Enough",
+  "updateTime":1524549037000
+}
+
+
+,
+	{
+		"edited":0,
+		"groupId":"13",
+		"handler":{},
+		"id":"0403_1514399400011",
+		"img":"../image/posterVideo/pop/iptrack2.jpg",
+		"isDelete":0,
+		"menu":{"$ref":"$[0].menu"},
+		"plot":"<p>Music video by Capital Cities performing Safe And Sound. (C) 2013 Lazy Hooks, LLC Under Exclusive LicenseTo Capitol Records, LLC</p>",
+		"poster":"Animation",
+		"sort":4,
+		"src":"../video/videos/pop/ptrack2.mp4",
+		"pub":"../video/preRoll/Burn Bumper ads.mp4",
+		"title":"Capital Cities - Safe And Sound",
+		"updateTime":1524549037000
+	},
+	{
+		"edited":0,
+		"groupId":"13",
+		"handler":{},
+		"id":"0403_1514399400012",
+		"img":"../image/posterVideo/pop/iptrack3.jpg",
+		"isDelete":0,
+		"menu":{"$ref":"$[0].menu"},
+		"plot":"<p>Written & Composed by Michael Jackson Produced by Quincy Jones for Quincy Jones Productions Co-Produced by Michael Jackson for MJJ Productions, Inc. From the album Off the Wall, released August 10, 1979 Released as a single July 10, 1979</p>",
+		"poster":"Animation",
+		"sort":3,
+		"src":"../video/videos/pop/ptrack3.mp4",
+		"pub":"../video/preRoll/Airbnb.mp4",
+		"title":"Michael Jackson - Don’t Stop 'Til You Get Enough",
+		"updateTime":1524549037000
+	}

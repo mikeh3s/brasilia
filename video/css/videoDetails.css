@@ -41,7 +41,7 @@ body{
      margin-left:15px;
      font-size: 16px;
      font-weight: bold;
-     /*color: #354fff;*/
+     color: #354fff;
  }
  .plot{
 	 padding-top: 10px;
@@ -55,14 +55,12 @@ body{
  }
 
   .video{
-      font-size: 22px;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      font-weight: bold;
-      /*padding-left: 10px;*/
-      padding-bottom: 20px;
-			margin: 5px;
-			position: relative;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5%;
   }
 
 .logo_cntr {
