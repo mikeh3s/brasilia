@@ -20,7 +20,7 @@
 		"sort":5,
 		"src":"../video/series/latele/LA_TELE_LETAL-04JUN18-1.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"04JUN18-1",
+		"title":"20x01",
 		"updateTime":1524549037000
 	},
 	{
@@ -35,7 +35,7 @@
 		"sort":4,
 		"src":"../video/series/latele/LA_TELE_LETAL-04JUN18-2.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"04JUN18-2",
+		"title":"20x02",
 		"updateTime":1524549037000
 	},
 	{
@@ -59,7 +59,7 @@
 		"sort":5,
 		"src":"../video/series/latele/LA_TELE_LETAL-04JUN18-3.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"04JUN18-3",
+		"title":"20x03",
 		"updateTime":1524549037000
 	},
 	{
@@ -74,7 +74,7 @@
 		"sort":4,
 		"src":"../video/series/latele/LA_TELE_LETAL-04JUN18-4.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"04JUN18-4",
+		"title":"20x04",
 		"updateTime":1524549037000
 	},
 	{
@@ -98,7 +98,7 @@
 		"sort":5,
 		"src":"../video/series/latele/LA_TELE_LETAL-04JUN18-5.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"04JUN18-5",
+		"title":"20x05",
 		"updateTime":1524549037000
 	}	,
 	{
@@ -113,7 +113,7 @@
 		"sort":4,
 		"src":"../video/series/latele/LA_TELE_LETAL-11JUN18-1.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"11JUN18-1",
+		"title":"20x06",
 		"updateTime":1524549037000
 	},
 	{
@@ -137,7 +137,7 @@
 		"sort":5,
 		"src":"../video/series/latele/LA_TELE_LETAL-11JUN18-2.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"11JUN18-2",
+		"title":"20x07",
 		"updateTime":1524549037000
 	},
 	{
@@ -152,7 +152,7 @@
 		"sort":4,
 		"src":"../video/series/latele/LA_TELE_LETAL-11JUN18-3.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"11JUN18-3",
+		"title":"20x08",
 		"updateTime":1524549037000
 	},
 	{
@@ -167,7 +167,7 @@
 		"sort":4,
 		"src":"../video/series/latele/LA_TELE_LETAL-11JUN18-4.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"11JUN18-4",
+		"title":"20x09",
 		"updateTime":1524549037000
 	},
 	{
@@ -182,7 +182,7 @@
 		"sort":4,
 		"src":"../video/series/latele/LA_TELE_LETAL-11JUN18-5.mp4",
 			"pub":"../video/preRoll/h3spreroll.mp4",
-		"title":"11JUN18-5",
+		"title":"20x10",
 		"updateTime":1524549037000
 	},
 	{
@@ -197,7 +197,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-1.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-1",
+			"title":"20x11",
 			"updateTime":1524549037000
 		},
 		{
@@ -212,7 +212,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-2.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-2",
+			"title":"20x12",
 			"updateTime":1524549037000
 		},
 		{
@@ -236,7 +236,7 @@
 			"sort":5,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-3.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-3",
+			"title":"20x13",
 			"updateTime":1524549037000
 		},
 		{
@@ -251,7 +251,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-4.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-4",
+			"title":"20x14",
 			"updateTime":1524549037000
 		},
 		{
@@ -266,7 +266,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-5.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-5",
+			"title":"20x15",
 			"updateTime":1524549037000
 		},
 			{
@@ -281,7 +281,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-5.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-5",
+			"title":"20x16",
 			"updateTime":1524549037000
 		},
 			{
@@ -296,7 +296,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-5.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-5",
+			"title":"20x17",
 			"updateTime":1524549037000
 		},
 			{
@@ -311,7 +311,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-5.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-5",
+			"title":"20x19",
 			"updateTime":1524549037000
 		},
 			{
@@ -326,7 +326,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-5.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-5",
+			"title":"20x20",
 			"updateTime":1524549037000
 		},
 			{
@@ -341,7 +341,7 @@
 			"sort":4,
 			"src":"../video/series/latele/LA_TELE_LETAL-28MAY18-5.mp4",
 				"pub":"../video/preRoll/h3spreroll.mp4",
-			"title":"28MAY18-5",
+			"title":"20x21",
 			"updateTime":1524549037000
 		}
 ]
