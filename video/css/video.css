@@ -43,12 +43,12 @@
     overflow: hidden;
     background-color: #f0f0f0;
     /*padding: 0 1% 0 1.8%;*/
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
 }
 
 .video-type-content{
-	padding-right: 3px;
+	padding-right: 25px;
     padding-left: 3px;
 }
 
