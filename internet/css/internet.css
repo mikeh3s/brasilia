@@ -111,7 +111,7 @@
 	color:#F00;
 	font-size:14px;
 	word-wrap: break-word;
-	white-space:normal; 
+	white-space:normal;
 }
 
 
@@ -137,12 +137,16 @@
 	background-size:100% 100%;
 	cursor:pointer;
 }
+/* Boton de enviar */
 .register_cntr{
 	height:50px;
-	background:url(../image/yellow_button.png);
+	background-color: #1e739e;
 	background-size:100% 100%;
 	line-height:50px;
 	margin-bottom:30px;
+	border:2px solid #304f6f;
+	border-radius:5px;
+	width: 100%;
 }
 .register_cntr:hover{
 	background:url(../image/yellow_hover.png);
@@ -155,7 +159,10 @@
     background:url(../image/disable_button.png);
     background-size:100% 100%;
     line-height:50px;
+		border:2px solid #304f6f;
+		border-radius:5px;
     margin-bottom:30px;
+		width: 100%;
 }
 
 /**��������**/
@@ -269,11 +276,14 @@
 .agree_img{
     margin-top: -4px;
     width: 30px;
+		max-width: 30px;
     display: inline;
+		margin-right: 5px;
 }
 
 .agree_checkbox label {
     display: inline;
+	color: #005baa;
 }
 
 .surf_internet{
