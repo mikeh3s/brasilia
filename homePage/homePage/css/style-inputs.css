@@ -1,0 +1,35 @@
+.form-input {
+    color: #005baa;
+    padding: 15px;
+    margin-top: 20px;
+    width: 70%;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid #005baa;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.form-input option {
+    color: #35b3a0;
+    background: transparent;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    padding-left: 10px;
+    color: #005baa;
+    opacity: 1; /* Firefox */
+  }
+.icons {
+    color: #005baa;
+    right: 22%;
+    margin-top: 38px;
+    position: absolute;
+}
+.stmt {
+    font-size: 1.2em;
+    margin-top: 2%;
+    height: 5px;
+    color: red;
+}

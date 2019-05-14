@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header img{
+    height: 50px;
+    position: absolute;
+}
+.header-call img{
+    height: 50px;
+    position: relative;
+    float: right;
+}
+.header-logo img {
+    margin: 5px 0 0 15px ;
+    height: 40px;
+    position: relative;
+    float: left;
+}
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+  }
+  input[type="checkbox"] + label:before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 0.2em 0.8em -10px 0;
+    border: 2px solid #35b3a0;
+    background: transparent;
+    border-radius: 3px;
+}
+input[type="checkbox"]:checked + label:before {
+	border-color: #35b3a0;
+}
+input[type="checkbox"]:checked + label:after {
+    content: "";
+    width: 15px;
+    height: 5px;
+    border: 2px solid #35b3a0;
+    float: left;
+    margin-left: -1.8em;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 0.2em;
+    transform: rotate(-55deg);
+}
+input[type="checkbox"]{
+	display:none;
+}
+
+  .background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(235, 228, 228, 0.281);
+    filter:brightness(0.3);
+    opacity:0.8;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    position: fixed;
+  }
+
+.logo {
+    text-align: center;
+    padding-top: 50px;
+    width: 70%;
+}
+.welcome {
+    font-weight: 900;
+    font-size: 2.4em;
+    color: #eb1f2d;
+}
+.welcome-signup {
+    font-size: 2.0em;
+    margin-top: 10%;
+}
+.separator {
+    height: 140px;
+}
+.action-button {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 30px;
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    border: 1px solid #35b3a0;
+    background-color: #333c82;
+}
+.action-button:hover {
+    background-color: #005baa;
+}
+.terms {
+    font-weight: 900;
+    font-size: 0.8em;
+    color: #005baa;
+    margin-top: 25px;
+}
+.terms a {
+    color: #eb1f2d;
+}  
+.stmt {
+    font-size: 1.2em;
+    margin-top: 2%;
+    height: 5px;
+    color: #eb1f2d;
+}

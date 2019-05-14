@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+    height: 100%;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    font: 12px Arial,"宋体","Microsoft Yahei";
+}
+/*下面的代码指定，字体大小是页面默认大小的100%，即16像素。*/
+body{
+    font: normal 100%  Arial,"宋体","Microsoft Yahei",Verdana, Lucida Grande, Lucida Sans,sans-serif;
+	/*background-color:#000;*/
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #181818;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+img, object, audio {
+	max-height: 100%;
+	max-width: 100%;
+}
+/*据不同的屏幕分辨率，选择应用不同的CSS规则*/
+@media only all and (max-width: 640px){
+    .container{
+        width: 100%!important;
+    }
+	.bottom_ad{
+		width: 100%!important;
+	}
+ }
+
+/*.container{*/
+    /*position: relative;*/
+    /*width: 640px;*/
+    /*margin: 0 auto;*/
+	/*overflow-x:hidden;*/
+/*}*/
+/*广告容器*/
+.ad_show{
+	width:100%;
+    height: 100%;
+}
+
+/**进度条**/
+.progress_bar {
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	left: -1px;
+	top: 0px;
+	background-color: transparent;
+}
+.progress_rate{
+	background-color:#0FF;
+	width:0px;
+	height: 3px;
+	border-radius:10px;
+}
+.show_progressRate{
+	position: absolute;
+	left: 78%;
+	top: 10px;
+}
+.progress_tips{
+	position:absolute;
+	top:25px;
+	left:25%;
+	right:15%;
+	text-align:center;
+	font-size:14px;
+	color:#2D96E9;
+}
+.internet-not-ok{
+	display: none;
+	position: relative;
+	left: 0;
+	bottom: 60px;
+	width: 100%;
+	text-align:center;
+	color: #ff0000;
+}
+.visit-local-resource{
+	background: #2f9bf1;
+	color: #ffffff;
+	border: 1px solid #d5d5d5;
+	border-radius: 6px;
+	width: 160px;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+}

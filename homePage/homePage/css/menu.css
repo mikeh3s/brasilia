@@ -1,0 +1,17 @@
+.main-menu 
+{
+    text-align: center;
+    font-size: 4em;
+}
+
+.menu-button 
+{
+    cursor: pointer;
+    color: #ffff;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(#35b3a0, #333c82);
+}
+div.col-6 {
+    padding: 0px;
+}
