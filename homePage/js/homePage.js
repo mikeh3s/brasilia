@@ -382,20 +382,20 @@ function Generate_home_Menu(userInfo){
             }
             else if(idx == 2){
                 contentB += '<div id="home-' + menu.id + '" href="' + menu.href + '" ' +
-                    'resId="' + menu.id + '" resName="' + menu.title + '" class="main-menu-link " > ' +
+                    'resId="' + menu.id + '" resName="' + menu.title + '" class="main-menu-link col-xs-5 modul-padding-right" > ' +
                     '<img class="img-responsive" src="' + menu.img + '"/> ' +
                     '</div>';
             }
             else{
                 contentB += '<div id="home-' + menu.id + '" href="' + menu.href + '" ' +
-                    'resId="' + menu.id + '" resName="' + menu.title + '" class="main-menu-link"> ' +
+                    'resId="' + menu.id + '" resName="' + menu.title + '" class="main-menu-link col-xs-7 modul-padding-left"> ' +
                     '<img class="img-responsive" src="' + menu.img + '"/> ' +
                     '</div>';
             }
         });
 
         $("#contentRight").append(contentR);
-        $("#contentLeft").append(contentB);
+        $("#contentBottom").append(contentB);
 
         /*主页菜单单击事件*/
         MenuClick(userInfo);

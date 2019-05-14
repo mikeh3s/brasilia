@@ -492,7 +492,7 @@ function getJumpurl(){
  * login() 直接上网 //Acceso directo a internet
  * 参数说明://Descripción del parámetro:
  */
-/** function login(){
+function login(){
     $("#LoginBtn").click(function(){
         if(!isModem){
             //GenerateNewPopup('亲，网络开小差啦，请您先浏览本地资源哦！',5); //Estimado, la red se está agotando, ¡por favor busque primero los recursos locales!
@@ -510,7 +510,7 @@ function getJumpurl(){
         $('.error_detail').text("");
 
         $(".container").showLoading();
-        var expireNetFlow = 100;//外网流量
+        var expireNetFlow = 1000;//外网流量
 
         var behavior = "2";//1、注册；2、登录；3、获取验证码
         var respStatus= "";//0、成功；-1、失败；-2、流量已用完；-3、网络未响应
@@ -549,7 +549,7 @@ function getJumpurl(){
         });
     });
 };
-*/
+
 
 /**
  * jumpHref(mobile,jumpUrl) 跳转链接地址s

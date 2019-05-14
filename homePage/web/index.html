@@ -1,162 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta content="IE=edge" http-equiv="X-UA-Compatible">
-		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		
-		<!-- Titulo de la pagina web -->
-		<title>Portal Entretenimiento Brasilia</title>
-
-		<link rel="stylesheet" type="text/css" href="../../common/css/showLoading/showLoading.css"/>
-		<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="../../common/css/idangerous.swiper.css">
-		<link rel="stylesheet" type="text/css" href="../../common/css/public.css">
-		<link rel="stylesheet" type="text/css" href="../css/internet.css">
-		
-		<!-- set your website favicon -->
-		<link rel="icon" type="image/jpg" href="../../common/image/logo/logo.png">
-
-		<!-- Bootstrap Stylesheets -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Font Awesome Stylesheets -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- Template Main Stylesheets -->
-		<link rel="stylesheet" href="css/contact-form.css" type="text/css">
-
-		<script type="text/javascript" src="../../common/js/jquery-2.1.3.min.js"></script>
-		<script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
-		<script type="text/javascript" src="../../common/js/jquery.showLoading.min.js"></script>
-		<script type="text/javascript" src="../../common/js/bootstrap.js"></script>
-		<script type="text/javascript" src="../../common/js/jquery.hongdian.js"></script>
-		<script type="text/javascript" src="../../common/js/idangerous.swiper.js"></script>
-		<script type="text/javascript" src="../../common/js/base/base.js"></script>
-		<script type="text/javascript" src="../../common/js/menu/menu.js"></script>
-		<!-- Inicia session para validar la encuesta -->
-		<script src="js/init_session.js"></script>
-		<!-- No se que es, estar pendiende -->
-		<!-- <script src="../../common/js/NewPopup.js"></script> -->
-
-		<!-- Script que permite la validación en internet -->
-		<script type="text/javascript" src="../js/approve.js"></script>
-
-		<script src="../../common/js/base/get_ad.js"></script>
-		<!--<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101214096"
-		data-redirecturi="http://17gimefi.com/index_qq_b.html" charset="utf-8"></script>-->
-
-	</head>
-	<body>
-		<div class="background"></div>
-		<section id="contact-form-section" class="form-content-wrap">
-			<div class="container">
-				<div class="row">
-					<div class="tab-content">
-						<div class="col-sm-12">
-							<div class="item-wrap">
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="item-content colBottomMargin">
-											<div class="item-info">
-												<!-- Logo dentro de index -->
-												<img src="../image/logo-header.png" alt="logo" class="logo">
-												<h2 class="text-center">Bienvenido a nuestro portal de entretenimiento.</h2>
-												<h2 class="item-title">¡Ingresa a nuestra plataforma!</h2>
-											</div><!--End item-info -->
-										</div><!--End item-content -->
-									</div><!--End col -->
-									<div class="col-md-12">
-										<form id="contactForm" name="contactform" data-toggle="validator" class="popup-form">
-											<div class="row">
-												<div id="msgContactSubmit" class="hidden"></div>
-												<div class="form-group col-sm-6">
-													<div class="help-block with-errors"></div>
-														<input name="fname" id="fname" placeholder="Nombre*" class="form-control" type="text" required data-error="Por favor ingresa tu nombre">
-														<div class="input-group-icon"><i class="fa fa-user"></i></div>
-												</div><!-- end form-group -->
-												<div class="form-group col-sm-6">
-													<div class="help-block with-errors"></div>
-													<input name="email" id="email" placeholder="E-mail*" pattern=".[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" class="form-control" type="email" required data-error="Ingresa un correo electrónico válido">
-													<div class="input-group-icon"><i class="fa fa-envelope"></i></div>
-												</div><!-- end form-group -->
-												<div class="form-group col-sm-6">
-													<div class="help-block with-errors"></div>
-													<input name="phone" id="phone" placeholder="Teléfono*" class="form-control" type="text" required data-error="Ingresa tu número de teléfono">
-													<div class="input-group-icon"><i class="fa fa-phone"></i></div>
-												</div><!-- end form-group -->
-												<div class="form-group col-sm-6">
-													<div class="help-block with-errors"></div>
-													<select name="edad" id="edad" class="form-control" required data-error="Selecciona tu rango de edad">
-														<option value="">Edad *</option>
-															<option value"0-14">0-14</option>
-															<option value"15-17">15-17</option>
-															<option value"18-25">18-25</option>
-															<option value"26-35">26-35</option>
-															<option value"36-45">36-45</option>
-															<option value"46-55">46-55</option>
-															<option value"56-64">56-64</option>
-															<option value"65">mayor 65</option>
-													</select>
-													<div class="input-group-icon"><i class="fa fa-blind"></i></div>
-											</div><!-- end form-group -->
-										
-											<div class="form-group col-sm-6">
-												<div class="help-block with-errors"></div>
-												<select name="genero" id="genero" class="form-control" required data-error="Selecciona tu genero">
-													<option value="">Sexo</option>
-														<option value="M">Masculino</option>
-														<option value="F">Femenino</option>
-														<option value="O">Otro</option>
-												</select>
-												<div class="input-group-icon"><i class="fa fa-venus-mars"></i></div>
-											</div><!-- end form-group -->
-											<div class="form-group col-sm-7">
-												<div class="help-block with-errors"></div>
-												<div id="" class="login_container"></div>
-												<div class="surf_internet tab-pane" id="time_line">
-													<div class="logo_cntr"></div>
-														<div id="Agree_info">
-															<div  class="agree_checkbox">
-																<!--<div id="agreeCheckBox" checkValue="1" class="agree_img"><img src="../image/checkBox_choice.png"/></div>-->
-																<label id="Terms_btn">Estoy de acuerdo con
-																	<a href="../../internet/web/notice.html">Terminos y condiciones</a>
-																</label>
-															</div>
-														</div>	
-														<div class="btn_cntr">
-															<button id="LoginBtn" class="register_cntr">
-																<span>¡Ingresa!</span>
-															</button>
-														</div>
-												</div>
-													<div class="clearfix"></div>
-											</div><!-- end row -->
-										</form><!-- end form -->
-									</div>
-								</div><!-- End row -->
-							<!-- Popup end -->
-							</div><!-- end item-wrap -->
-						</div><!--End col -->
-					</div><!--End tab-content -->
-				</div><!--End row -->
-			</div><!--End container -->
-
-		</section>
-
-		<a href="#" class="scrollup"><i class="fa fa-arrow-circle-up"></i></a>
-
-		
-		<!-- jQuery Library -->
-		<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-		<!-- Popper js -->
-		<script src="js/popper.min.js"></script>
-		<!-- Bootstrap Js -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Form Validator -->
-		<script src="js/validator.min.js"></script>
-		<!-- Contact Form Js -->
-		<script src="js/contact-form.js"></script>
-
-
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../../common/new/css/bootstrap.css">
+        <link rel="stylesheet" href="../../common/new/css/main.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <title>H3S Portal Entretenimiento</title>
+    </head>
+    <body>
+        <!-- Start content -->
+    <main>
+        <div class="background"></div>
+        <section>
+            <div class="">
+                <!-- Header logo -->
+                <header>
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img-fluid rounded mx-auto d-block logo" src="../../common/image/logo.png" alt="H3S HARDWARE, SOFTWARE & SERVICE SOLUTIONS">
+                        </div>     
+                    </div>
+                </header>
+                <!-- Status Alert -->
+                <div class="row">
+                    <div class="col-12 mx-auto d-block text-center stmt_separator">
+                        <div id="warning"></div>
+                    </div>
+                </div>
+                <!-- Welcome words -->
+                <div class="row">
+                    <div class="col-12 col-sm-6 mx-auto d-block text-center">     
+                        <h4 class="welcome">BIENVENIDO <br> A NUESTRO <br> PORTAL DE <br> ENTRETENIMIENTO</h4>
+                    </div>
+                </div>
+                <!-- Terms and conditions -->
+                <div class="row">
+                    <div class="col-12 mx-auto d-block text-center terms">
+                        <input id="conditions" type="checkbox">
+                        <label for="conditions"></label>
+                        <span>Estoy de acuerdo con <a href="">Términos y condiciones</a></span>
+                    </div>
+                </div>
+                <!-- Action button -->
+                <div class="row">
+                    <div class="col-12 mx-auto d-block text-center">
+                        <button id="redirect_btn" class="action-button">REGÍSTRATE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JS for bootstrap -->
+    <script src="../../common/new/js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="../../common/new/js/popper.min.js"></script>
+    <script src="../../common/new/js/bootstrap.min.js"></script>
+    <!-- Redirect and accept Terms and conditions JS -->
+    <script src="../js/terms.js"></script>
+    </body>
 </html>
