@@ -51,43 +51,46 @@
     </div>
 
     <!-----------------广告位-------------------->
-    <div class="slide-ad">
-        <div id="VideoAdSlide1" class="swiper-container">
-            <div class="news-wrapper swiper-wrapper">
-                <script type="text/javascript">
-                    getAd('VideoAdSlide1');//获取01号广告位
-                </script>
-            </div>
-        </div>
-        <div class="pagination-news"></div>
+    <div class="no-scroll">
+      <div class="slide-ad">
+          <div id="VideoAdSlide1" class="swiper-container">
+              <div class="news-wrapper swiper-wrapper">
+                  <script type="text/javascript">
+                      getAd('VideoAdSlide1');//获取01号广告位
+                  </script>
+              </div>
+          </div>
+          <div class="pagination-news"></div>
+      </div>
     </div>
-
     <!-----------------二级菜单-------------------->
     <!-- Menú secundario -->
-    <div class="tabs-navbar">
+    <div class="appsSwiper">
+
+      <div class="tabs-navbar">
         <ul>
-            <script type="text/javascript">
+          <script type="text/javascript">
                 generate_videoSecMenu(mid);//获取二级菜单 //Obtener el menú secundario
-            </script>
+                </script>
         </ul>
-    </div>
-    <!-----------------影音列表-------------------->
+      </div>
+      <!-----------------影音列表-------------------->
     <!-- Lista de videos -->
     <div id="0403_1514399400011" onclick="openUrban()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
-      <div class="video-img">
-        <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterVideo/vid1/posvid1.jpg">
+        <div class="video-img">
+          <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterVideo/vid1/posvid1.jpg">
+        </div>
+        <div class="movie_title">Diomedes Díaz</div>
       </div>
-      <div class="movie_title">Diomedes Díaz</div>
-    </div>
-<!-- classic -->
-<div id="0403_1514399400011" onclick="openClassics()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
-  <div class="video-img">
-    <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterVideo/vid2/posvid2.jpg">
-  </div>
-  <div class="movie_title">Carlos Vives</div>
-</div>
-<!-- electronica -->
-<div id="0403_1514399400011" onclick="openElectro()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
+      <!-- classic -->
+      <div id="0403_1514399400011" onclick="openClassics()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
+          <div class="video-img">
+            <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterVideo/vid2/posvid2.jpg">
+          </div>
+          <div class="movie_title">Carlos Vives</div>
+        </div>
+        <!-- electronica -->
+        <div id="0403_1514399400011" onclick="openElectro()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
   <div class="video-img">
     <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterVideo/vid3/posvid3.jpg">
   </div>
@@ -101,5 +104,6 @@
       <div class="movie_title">Bon Jovi</div>
     </div>
   </div>
+</div>
 </body>
 </html>

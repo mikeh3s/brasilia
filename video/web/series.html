@@ -50,56 +50,61 @@
     </div>
 
     <!-----------------广告位-------------------->
-    <div class="slide-ad">
-        <div id="VideoAdSlide1" class="swiper-container">
-            <div class="news-wrapper swiper-wrapper">
-                <script type="text/javascript">
-                    getAd('VideoAdSlide1');//获取01号广告位
-                </script>
-            </div>
-        </div>
-        <div class="pagination-news"></div>
-    </div>
+    <div class="no-scroll">
 
-    <!-----------------二级菜单-------------------->
-    <div class="tabs-navbar">
-        <ul>
+      <div class="slide-ad">
+        <div id="VideoAdSlide1" class="swiper-container">
+          <div class="news-wrapper swiper-wrapper">
+            <script type="text/javascript">
+                    getAd('VideoAdSlide1');//获取01号广告位
+                    </script>
+            </div>
+          </div>
+          <div class="pagination-news"></div>
+        </div>
+        
+        <!-----------------二级菜单-------------------->
+        <div class="tabs-navbar">
+          <ul>
             <script type="text/javascript">
                 generate_videoSecMenu(mid);//获取二级菜单 //Obtener el menú secundario
-            </script>
+                </script>
         </ul>
+      </div>
     </div>
-    <!-----------------影音列表-------------------->
-    <!-- Lista de videos -->
-    <!-- Friends -->
-    <div id="0403_1514399400011" onclick="openFriends()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
+      <!-----------------影音列表-------------------->
+      <!-- Lista de videos -->
+      <!-- Serie 1 -->
+    <div class="appsSwiper">
+      <div id="0403_1514399400011" onclick="openFriends()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
       <div class="video-img">
       </div>
         <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterSerie/serie1/serie1poster.jpg">
       <div class="movie_title">The Big Bang Theory</div>
     </div>
-    <!-- supercampeones -->
+    <!-- Serie 2 -->
     <div id="0403_1514399400011" onclick="openSuper()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
-      <div class="video-img">
-      </div>
+        <div class="video-img">
+        </div>
         <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterSerie/serie2/serie2poster.jpg">
-      <div class="movie_title">How I met your mother</div>
-    </div>
-    <!-- pirry -->
-    <div id="0403_1514399400011" onclick="openPirry()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
+        <div class="movie_title">How I met your mother</div>
+      </div>
+      <!-- Serie 3 -->
+      <div id="0403_1514399400011" onclick="openPirry()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
       <div class="video-img">
         <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterSerie/serie3/serie3poster.jpg">
       </div>
       <div class="movie_title">F.R.I.E.N.D.S</div>
     </div>
-    <!-- la tele letal -->
+    <!-- Serie 4 -->
     <div id="0403_1514399400011" onclick="openLatele()" class="col-xs-6 col-sm-3 content-cell video-type-item" item="0403" name="undefined">
-      <div class="video-img">
-        <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterSerie/serie4/serie4poster.jpg">
+        <div class="video-img">
+          <img style="height:257px;width:174px;" class="img-responsive" src="../image/posterSerie/serie4/serie4poster.jpg">
+        </div>
+        <div class="movie_title">Los Simpsons</div>
       </div>
-      <div class="movie_title">Los Simpsons</div>
+      
     </div>
-
 </div>
 </body>
 </html>
