@@ -7,8 +7,8 @@
 	// Variable para saber si ya hizo la encuesta	
 	// $user_poll_stat = "0";
 	//Comentar desde este punto para hacer pruebas en PC
-	// require_once("../../common/api/get_config.php");
-	// require_once("../../common/api/get_ad.php");
+	// require_once("get_config.php");
+	// require_once("get_ad.php");
 	
 	// if(isset($_REQUEST["preview"])){
 	// 	$preview = $_REQUEST["preview"];
@@ -24,7 +24,7 @@
 	// 				$preview = $_SESSION["preview"];
 	// 			}
 	// 	else{
-	// 			require_once("../../common/api/init_data.php");
+	// 			require_once("init_data.php");
 		
 	// 			//apk需要服务器域名
 	// 			//Requerir el nombre de dominio del servidor.
@@ -50,13 +50,13 @@
 	// header("Cookie: PHPSESSID=".$sessionId);
 	
 	// //获取跳转网址 //Obtener URL de salto
-	// $dataContent = file_get_contents("../../common/data/jump_url");
+	// $dataContent = file_get_contents("../data/jump_url");
 	// $apiData = json_decode($dataContent, true);
 	// $url = $apiData["apk_jump_url"];
 	// header("jumpUrl:".$url);
 	// //获取平台服务器地址
 	// //Obtener la dirección del servidor de la plataforma.
-	// $serverDataContent = file_get_contents("../../common/data/server_api");
+	// $serverDataContent = file_get_contents("../data/server_api");
 	// $serverData = json_decode($serverDataContent, true);
 	// $serverHost = $serverData["server_host"];
 	// header("serverHost:".$serverHost);
@@ -148,13 +148,13 @@ else {
 	date_default_timezone_set('America/Bogota');
 try{
 $data = array(
-	'fname'  => empty($_REQUEST['fname'])   ? NULL : (@$_REQUEST['fname']),
+	'fname'  => empty($_REQUEST['name'])   ? NULL : (@$_REQUEST['name']),
 	'email'  => empty($_REQUEST['email'])   ? NULL : (@$_REQUEST['email']),
 	'phone'  => empty($_REQUEST['phone'])   ? NULL : (@$_REQUEST['phone']),
-	'edad'   => empty($_REQUEST['edad'])    ? NULL : (@$_REQUEST['edad']),
-	'genero' => empty($_REQUEST['genero'])  ? NULL : (@$_REQUEST['genero']),
+	'edad'   => empty($_REQUEST['age'])    ? NULL : (@$_REQUEST['age']),
+	'genero' => empty($_REQUEST['gender'])  ? NULL : (@$_REQUEST['gender']),
 	'serie_Dispo' => $termSN,
-	'Fecha_ingre' => empty($_REQUEST['Fecha_ingre'])  ? NULL : (@$_REQUEST['Fecha_ingre']),
+	'Fecha_ingre' => empty($_REQUEST['time'])  ? NULL : (@$_REQUEST['time']),
 	'mac' 	=> $macAdd,
 	'pmac' 	=> $type,
 	'model'	=> $model
@@ -167,17 +167,17 @@ if(!@$fichero){
 $data= array(
 	'serie_Dispo' => $termSN,
 	'sep'	 => '|',
-	'Fecha_ingre' => empty($_REQUEST['Fecha_ingre'])  ? NULL : (@$_REQUEST['Fecha_ingre']),
+	'Fecha_ingre' => empty($_REQUEST['time'])  ? NULL : (@$_REQUEST['time']),
 	'sep1'	 => '|',
-	'fname'  => empty($_REQUEST['fname'])   ? NULL : (@$_REQUEST['fname']),
+	'fname'  => empty($_REQUEST['name'])   ? NULL : (@$_REQUEST['name']),
 	'sep2'	 => '|',
 	'email'  => empty($_REQUEST['email'])   ? NULL : (@$_REQUEST['email']),
 	'sep3'	 => '|',
 	'phone'  => empty($_REQUEST['phone'])   ? NULL : (@$_REQUEST['phone']),
 	'sep4'	 => '|',
-	'edad'   => empty($_REQUEST['edad'])    ? NULL : (@$_REQUEST['edad']),
+	'edad'   => empty($_REQUEST['age'])    ? NULL : (@$_REQUEST['age']),
 	'sep5'	 => '|',
-	'genero' => empty($_REQUEST['genero'])  ? NULL : (@$_REQUEST['genero']),
+	'genero' => empty($_REQUEST['gender'])  ? NULL : (@$_REQUEST['gender']),
 	'sep6'	 => '|',
 	'mac' => $macAdd,
 	'sep7'	 => '|',

@@ -1,6 +1,6 @@
 $('#send_btn').click(function send_form(stmt_send){
     /** Get data values */
-    let name = $('#fname');
+    let name = $('#name');
     let email = $('#email');
     let phone = $('#phone');
     let age = $('#age');
@@ -104,6 +104,7 @@ $('#send_btn').click(function send_form(stmt_send){
             url: path,
             data: data,
             success: function(data){
+                
                 console.log(data);
                 warning.html("Registro exitoso!");
                 warning.css('color', 'green');
