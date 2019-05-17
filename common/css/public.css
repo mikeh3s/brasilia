@@ -52,13 +52,13 @@ img, object, audio {
 .main_menu .nav > li > a:hover , .main_menu .nav > li > a:focus{background-color: transparent;}
 .menu-ul .col-xs-3{width: 25%;}
 .menu_a{z-index: 1001;}
-.no-scroll {
+/* .no-scroll {
     position: fixed;
     top: 0px;
     width: 100%;
     height: 50px;
     z-index: 1000;
-}
+} */
 /* menu */
 .call-b {position: absolute; margin-top: 0%; width: 120px; top: 0; padding: 0; right: 0px;}
 .menu-btn {position: absolute;left: auto;margin-left: -5px;top: 0px;bottom: 0;width: 55px;height: 48px;background: url(../image/cityPasshome_home.png) no-repeat;background-size: 65px 45px;}

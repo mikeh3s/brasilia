@@ -1,5 +1,6 @@
 $('#send_btn').click(function send_form(stmt_send){
     /** Get data values */
+    let terms = $('#conditions');
     let name = $('#name');
     let email = $('#email');
     let phone = $('#phone');
@@ -97,6 +98,11 @@ $('#send_btn').click(function send_form(stmt_send){
         phone.css('border', '2px solid red');
         stmt_send = false;
     }
+    else if (!terms.prop('checked') == true)
+    {
+        warning.html("Porfavor acepte los terminos y condiciones!");
+        warning.css('color', 'red');
+    }
     else
     {
         $.ajax({
@@ -108,6 +114,15 @@ $('#send_btn').click(function send_form(stmt_send){
                 console.log(data);
                 warning.html("Registro exitoso!");
                 warning.css('color', 'green');
+                
+                var cname = "sessionStat";
+                var cvalue = "1";
+                var exdays;
+                var d = new Date();
+                    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires="+d.toUTCString();
+                    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                
                 setTimeout(redirect,3000);
             },
             error: function(){

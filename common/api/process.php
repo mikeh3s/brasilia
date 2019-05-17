@@ -5,7 +5,7 @@
 	//Este dato se destruye despues de un tiempo para hacer otra session
 	// $user_name = $_REQUEST['fname'];
 	// Variable para saber si ya hizo la encuesta	
-	// $user_poll_stat = "0";
+	$user_poll_stat = "0";
 	//Comentar desde este punto para hacer pruebas en PC
 	// require_once("get_config.php");
 	// require_once("get_ad.php");
@@ -80,8 +80,6 @@ $modelIp = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 	$user_mac = $macAdd;
 	$user_SN = $termSN;
 	$user_session_stat = "1";
-	// setcookie("userName", $user_name);
-	// setcookie("userStat", $user_poll_stat);
 	setcookie("userMac", $user_mac);
 	setcookie("userSN", $user_SN);
 	setcookie("sessionStat" ,$user_session_stat);
