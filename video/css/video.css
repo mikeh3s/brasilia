@@ -53,9 +53,10 @@
 }
 
 .movie_title{
+    position: relative;
     text-align: center;
     font-size: 14px;
-    height: 20px;
+    height: 50px;
     line-height: 20px;
     overflow: hidden;
 }
