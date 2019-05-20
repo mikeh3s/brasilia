@@ -37,9 +37,10 @@ img, object, audio {
 
 /**一级菜单**/
 .main_menu{
+    color: #ffffff;
     position: fixed;
     top: 48px;
-    background-color: #eeeeee;
+    background-color: #000000;
     overflow: hidden;
     width: 100%;
     height: 35px;
@@ -65,7 +66,7 @@ img, object, audio {
 /* slide advertisement*/
 .slide-ad{text-align: center;position: relative;margin-top: 84px;}
 /*菜单导航*/
-.tabs-navbar{position: relative;padding:0;/*background-color: #f0f0f0;*/height: 35px;}
+.tabs-navbar{color: #ffffff; position: relative;padding:0;/*background-color: #f0f0f0;*/height: 35px;}
 .tabs-navbar ul{margin: 0;padding: 0;overflow:hidden;}/*解决子元素使用了float属性后离当前HTML文档流，当前HTML文档会当作设置float属性的元素不存在一样，使的父元素的高度为0*/
 .tabs-navbar li{position: relative;display: inline;height: 40px;line-height: 40px;text-align: center;font-size: 18px;}
 /*.nav-active{background-color: #3399ff;color: #ffffff;}*/
@@ -78,7 +79,7 @@ img, object, audio {
 .pagination-news {position: absolute;left: 0;text-align: center;bottom: 5px;width: 100%;z-index: 100;}
 /***选中的菜单样式**/
 /* Aqui se cambian los colores del menu */
-.cur_menu{background-color: #23b3a0 !important;color: #ffffff !important;}
+.cur_menu{background-color: #f30b0b !important;color: #ffffff !important;}
 
 .tabs-navbar li{
     position: relative;
@@ -89,7 +90,7 @@ img, object, audio {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    background: #000000;
 }
 a {
     color: inherit;
@@ -105,7 +106,7 @@ a:hover, a:focus {
 .nav-active a{
     background: none;
     /*color: #3399ff;*/
-    color: #23b3a0;
+    color: #f30b0b;
     font-weight: bolder;
 }
 
