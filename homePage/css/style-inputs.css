@@ -1,20 +1,20 @@
 .form-input {
     color: #005baa;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 8px;
+    margin-top: 10px;
     width: 70%;
     background: transparent;
     border-radius: 30px;
     border: 2px solid #005baa;
     background-color: transparent;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .form-input option {
     color: #35b3a0;
     background: transparent;
     background-color: transparent;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     padding-left: 10px;
@@ -24,7 +24,7 @@
 .icons {
     color: #005baa;
     right: 22%;
-    margin-top: 38px;
+    margin-top: 25px;
     position: absolute;
 }
 .stmt {
