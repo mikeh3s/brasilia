@@ -41,7 +41,7 @@
 /*video content li*/
 .video-type-item{
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: #000000;
     /*padding: 0 1% 0 1.8%;*/
     padding: 0 20px;
     margin: 0;
@@ -59,6 +59,7 @@
     height: 50px;
     line-height: 20px;
     overflow: hidden;
+    color: #ffffff;
 }
 
 /*.menu_04{*/
@@ -74,7 +75,7 @@
     margin: 1px auto;
 }
 
-.sec-menu-line{width: 80px;height:2px;margin: -1px auto 0 auto;padding: 0;border:2px solid #3399ff;/*border:2px solid #3399ff;*//*border-top: 0px solid #3399ff*/}
+.sec-menu-line{width: 80px;height:2px;margin: -1px auto 0 auto;padding: 0;border:2px solid #f30b0b;/*border:2px solid #3399ff;*//*border-top: 0px solid #3399ff*/}
 
 .video-img{
     margin: 10px auto 2px auto;
