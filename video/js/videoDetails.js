@@ -66,7 +66,7 @@ function loadVideo(mid,itemId,docid,pub){
                     var VideoTitle = '<div class="video">' + title + '</div>';
 
                     var VideoShow = '<video id="'+id +'>" class="video_title" src="' + source
-                        + '"  controls controlsList="nodownload" width="100%"></video>';
+                        + '"  controls controlsList="nodownload" width="100%"><track src="subs.srt" kind="subtitles" srclang="es" label="Español"></video>';
 
                     $(".header-center").append(VideoTitle);
                     $(".video_show").append(VideoShow);
@@ -99,7 +99,7 @@ function loadVideo(mid,itemId,docid,pub){
                     var VideoTitle = '<div class="video">' + title + '</div>';
 
                     var VideoShow = '<video id="'+id +'" class="video_title" src="' + source
-                        + '"  controls controlsList="nodownload" width="100%" autoplay></video>';
+                        + '"  controls controlsList="nodownload" width="100%" autoplay><track src="subs.srt" kind="subtitles" srclang="es" label="Español"></video>';
 
                     $(".header-center").append(VideoTitle);
                     $(".video_show").append(VideoShow);
